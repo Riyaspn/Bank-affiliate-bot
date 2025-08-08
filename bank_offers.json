@@ -1,0 +1,456 @@
+[
+{
+"name": "HDFC Bank Credit Cards",
+"product_type": "credit_card",
+"program_type": "official",
+"links": [
+{ "type": "official", "label": "Referral Portal", "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/credit-card-services/credit-card-referral-program" },
+{ "type": "official", "label": "HDFC Tracked Link", "url": "https://hdfcbk.io/HDFCBK/K/DUvfZqS14o8" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["cashback", "rewards", "bank"],
+"image": "",
+"eligibility": "Age 21+; new-to-bank preferred; income docs",
+"notes": "Use official first; rotate featured cards monthly"
+},
+{
+"name": "SBI Card – BPCL Octane",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Redirect", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.sbicard.com%2Fsprint%2Fbpcl-octane" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["fuel", "cashback", "sbi"],
+"image": "",
+"eligibility": "Good CIBIL; fuel spenders",
+"notes": "Check campaign status weekly"
+},
+{
+"name": "ICICI Bank Credit Cards",
+"product_type": "credit_card",
+"program_type": "official_network",
+"links": [
+{ "type": "official", "label": "ICICI Referral Page", "url": "https://www.icicibank.com/personal-banking/card/credit-card/referral-program" },
+{ "type": "network", "label": "Network Redirect", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.icicibank.com%2Fpersonal-banking%2Fcard%2Fcredit-card%2Freferral-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["rewards", "travel", "cashback"],
+"image": "",
+"eligibility": "Existing cardholders generate link via iMobile",
+"notes": "Use official if you are a cardholder"
+},
+{
+"name": "Axis Bank Credit Cards",
+"product_type": "credit_card",
+"program_type": "official_network",
+"links": [
+{ "type": "official", "label": "Partner Info", "url": "https://getlasso.co/affiliate/axis-bank/" },
+{ "type": "network", "label": "Leap Verification (Redirect)", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fleap.axisbank.com%2Fverification" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["axis", "cashback", "co-brands"],
+"image": "",
+"eligibility": "NTB preferred; income docs",
+"notes": "Some campaigns rotate; check payout"
+},
+{
+"name": "IndusInd Bank Credit Cards",
+"product_type": "credit_card",
+"program_type": "official_network",
+"links": [
+{ "type": "official", "label": "Referral Link Generator", "url": "https://myaccount.indusind.com/savingsaccount/ReferralCodelink.aspx" },
+{ "type": "network", "label": "Apply – Network Redirect", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Finduseasycredit.indusind.com%2Fcustomer%2Fcredit-card%2Flead" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["indusind", "cashback", "lifestyle"],
+"image": "",
+"eligibility": "CIBIL 700+ recommended",
+"notes": ""
+},
+{
+"name": "YES Bank Credit Cards",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://www.cuelinks.com/campaigns/yes-bank-credit-card-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["yes", "network-only"],
+"image": "",
+"eligibility": "As per campaign",
+"notes": "No public official program"
+},
+{
+"name": "IDFC FIRST Bank Credit Cards",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Apply – Network Redirect", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.idfcfirstbank.com%2Fcredit-card%2Fntb-diy%2Fapply" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["idfc", "lifetime_free"],
+"image": "",
+"eligibility": "LTF cards common; income docs",
+"notes": ""
+},
+{
+"name": "HSBC India Credit Cards",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Apply – Network Redirect", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.accountopening.hsbc.co.in%2Fcredit-cards%2F%23!%2Fapp%2Fjourney%2Fcontact-details-VPC" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["hsbc", "premium"],
+"image": "",
+"eligibility": "Metro cities focus",
+"notes": "High payouts periodically"
+},
+{
+"name": "Bajaj Finserv (Cards/Loans)",
+"product_type": "other",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://www.cuelinks.com/campaigns/bajaj-finserv-credit-card-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["nbfc", "emi_card", "loans"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "RBL Bank – IndianOil Credit Card",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Product Page – Redirect", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.rblbank.com%2Findianoil-rbl-bank-credit-card" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["fuel", "rbl"],
+"image": "",
+"eligibility": "Fuel spenders; CIBIL 700+",
+"notes": ""
+},
+{
+"name": "AU Small Finance Bank Credit Card",
+"product_type": "credit_card",
+"program_type": "official_network",
+"links": [
+{ "type": "network", "label": "Apply – AU Onboarding", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fcconboarding.aubank.in%2Fauccself%2F" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["au", "cashback"],
+"image": "",
+"eligibility": "NTB; KYC online",
+"notes": ""
+},
+{
+"name": "Jupiter Money (App)",
+"product_type": "fintech_app",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Play Store – Redirect", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dmoney.jupiter" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["neobank", "upi", "savings"],
+"image": "",
+"eligibility": "KYC; PAN/Aadhaar",
+"notes": ""
+},
+{
+"name": "Kiwi (Credit on UPI)",
+"product_type": "fintech_app",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Apply – Kiwi", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.gokiwi.in%2F" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["credit_on_upi", "fintech"],
+"image": "",
+"eligibility": "PAN/Aadhaar; KYC",
+"notes": ""
+},
+{
+"name": "Scapia Credit Card",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Apply – Scapia", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.scapia.cards%2Flanding_page" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["travel", "fintech"],
+"image": "",
+"eligibility": "Travel rewards focus",
+"notes": ""
+},
+{
+"name": "Kotak 811 Savings Account",
+"product_type": "savings_account",
+"program_type": "official",
+"links": [
+{ "type": "official", "label": "Open 811 Account", "url": "https://www.kotak811.com/open-zero-balance-savings-account" },
+{ "type": "network", "label": "Network Redirect", "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.kotak811.com%2Fopen-zero-balance-savings-account" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["zero_balance", "digital_kyc"],
+"image": "",
+"eligibility": "Indian resident; PAN/Aadhaar",
+"notes": ""
+},
+{
+"name": "YES Bank (Campaign Listing)",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://www.cuelinks.com/campaigns/yes-bank-credit-card-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["yes", "campaign"],
+"image": "",
+"eligibility": "",
+"notes": "Duplicate listing consolidated"
+},
+{
+"name": "Standard Chartered Credit Cards",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign (status varies)", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fstandard-chartered-affiliate-program" }
+],
+"country": "IN",
+"status": "paused",
+"tags": ["premium", "network-only"],
+"image": "",
+"eligibility": "High-income metros",
+"notes": "Campaign often pauses; check alternates"
+},
+{
+"name": "Bank of Baroda Credit Cards",
+"product_type": "credit_card",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fbank-of-baroda-credit-card-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["bob", "cards"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "Federal Bank (Affiliate)",
+"product_type": "other",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffederal-bank-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["federal"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "PNB MetLife (PNB)",
+"product_type": "other",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fpnb-metlife-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["insurance"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "Canara Bank (Seasonal Campaigns)",
+"product_type": "credit_card",
+"program_type": "seasonal",
+"links": [
+{ "type": "network", "label": "Check Networks Seasonally", "url": "" }
+],
+"country": "IN",
+"status": "unknown",
+"tags": ["seasonal"],
+"image": "",
+"eligibility": "",
+"notes": "Campaigns run during promo periods; add when active"
+},
+{
+"name": "Aditya Birla Finance",
+"product_type": "other",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Faditya-birla-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["nbfc", "loans", "wealth"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "Mahindra Finance",
+"product_type": "loan",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmahindra-finance-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["vehicle_loan", "nbfc"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "Muthoot Finance",
+"product_type": "loan",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmuthoot-finance-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["gold_loan", "nbfc"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "Shriram Finance",
+"product_type": "loan",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Check Networks (Search)", "url": "" }
+],
+"country": "IN",
+"status": "unknown",
+"tags": ["nbfc", "sme", "vehicle_loan"],
+"image": "",
+"eligibility": "",
+"notes": "Add campaign link when live"
+},
+{
+"name": "Money View",
+"product_type": "loan",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmoneyview-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["personal_loan", "fintech"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "FatakPay",
+"product_type": "loan",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Cuelinks Campaign", "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffatakpay-affiliate-program" }
+],
+"country": "IN",
+"status": "active",
+"tags": ["instant_loan", "app"],
+"image": "",
+"eligibility": "",
+"notes": ""
+},
+{
+"name": "Bharat Loan / Devmuni Leasing",
+"product_type": "loan",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Check Networks (Search)", "url": "" }
+],
+"country": "IN",
+"status": "unknown",
+"tags": ["nbfc", "personal_loan"],
+"image": "",
+"eligibility": "",
+"notes": "Add campaign link when live"
+},
+{
+"name": "Paytm Money",
+"product_type": "investment",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Check Networks (Search)", "url": "" }
+],
+"country": "IN",
+"status": "unknown",
+"tags": ["mutual_funds", "demat"],
+"image": "",
+"eligibility": "",
+"notes": "Add campaign link when live"
+},
+{
+"name": "Zerodha",
+"product_type": "investment",
+"program_type": "official_network",
+"links": [
+{ "type": "official", "label": "Referral (if available)", "url": "" },
+{ "type": "network", "label": "Check Networks (Search)", "url": "" }
+],
+"country": "IN",
+"status": "unknown",
+"tags": ["trading", "demat"],
+"image": "",
+"eligibility": "",
+"notes": "Brokerage referral varies by time; add when available"
+},
+{
+"name": "Tata Capital / Tata Neu (Finance)",
+"product_type": "other",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Check Networks (Search)", "url": "" }
+],
+"country": "IN",
+"status": "unknown",
+"tags": ["loans", "card", "tata"],
+"image": "",
+"eligibility": "",
+"notes": "Add campaign link when live"
+},
+{
+"name": "NeoGrowth / Capital First (IDFC legacy)",
+"product_type": "loan",
+"program_type": "network",
+"links": [
+{ "type": "network", "label": "Check Networks (Search)", "url": "" }
+],
+"country": "IN",
+"status": "unknown",
+"tags": ["msme", "business_loan", "nbfc"],
+"image": "",
+"eligibility": "",
+"notes": "Partner via GroMo or direct when available"
+}
+]
