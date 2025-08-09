@@ -10,6 +10,7 @@ on:
 
 jobs:
   build-queue:
+    # Run when manually triggered OR at the 00:40 UTC cron
     if: github.event_name == 'workflow_dispatch' || github.event.schedule == '40 0 * * *'
     runs-on: ubuntu-latest
     permissions:
@@ -69,6 +70,7 @@ jobs:
           fi
 
   post:
+    # Run when manually triggered OR at any of the three posting crons
     if: |
       github.event_name == 'workflow_dispatch' ||
       github.event.schedule == '15 6 * * *' ||
@@ -107,6 +109,22 @@ jobs:
           HISTORY_FILE: data/post_history.json
         run: |
           python scripts/post_to_telegram.py
+
+      - name: Post all remaining items (manual only)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          DATA_FILE: data/bank_offers.json
+          ENRICHED_FILE: data/bank_offers.enriched.json
+          QUEUE_FILE: data/today_queue.json
+          HISTORY_FILE: data/post_history.json
+        run: |
+          # Try to post up to 3 items in total for today's queue
+          for i in 1 2 3; do
+            python scripts/post_to_telegram.py || true
+            sleep 5
+          done
 
       - name: Commit history/queue updates (robust)
         run: |
