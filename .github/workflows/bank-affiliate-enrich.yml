@@ -33,7 +33,7 @@ jobs:
           NAV_TIMEOUT_MS: "45000"
           JS_WAIT_MS: "4000"
         run: |
-          python scripts/fetch_images.py
+          python scripts/scraper.py
 
       - name: Commit updated data
         run: |
