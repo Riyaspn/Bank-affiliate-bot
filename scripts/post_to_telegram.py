@@ -11,7 +11,8 @@ ENRICHED_FILE = os.getenv("ENRICHED_FILE", "data/bank_offers.enriched.json")
 QUEUE_FILE = os.getenv("QUEUE_FILE", "data/today_queue.json")
 HISTORY_FILE = os.getenv("HISTORY_FILE", "data/post_history.json")
 
-MAX_CAPTION = 1000  # keep below photo caption limit (1024)
+# Keep below Telegram photo caption cap (1,024 chars); use text messages for longer bodies[1][2][3][5].
+MAX_CAPTION = 1000
 
 
 def load_json(path, default=None):
@@ -33,19 +34,46 @@ def save_json(path, obj):
 def best_link(links):
     if not links:
         return ""
-    # prefer official
     official = [l for l in links if l.get("type") == "official" and l.get("url")]
     if official:
-        # list -> first item url
-        if isinstance(official, list):
-            return official[0].get("url", "")
-        # dict
-        return official.get("url", "")
-    # else first link with url
+        item = official[0] if isinstance(official, list) else official
+        return item.get("url", "") if isinstance(item, dict) else item
     for l in links:
         if l.get("url"):
             return l["url"]
     return ""
+
+
+# Axis link overrides as requested
+AXIS_REPLACEMENTS = [
+    ("axisbank.com", "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fleap.axisbank.com%2Fverification"),
+    ("axismf.com", "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.axismf.com%2Fmicro-investing"),
+]
+
+
+def maybe_override_axis(entry, url):
+    tags = set((entry.get("tags") or []))
+    lower_url = (url or "").lower()
+    name_l = (entry.get("name") or "").lower()
+    if "axis" in tags or "axis" in name_l:
+        for host, repl in AXIS_REPLACEMENTS:
+            if host in lower_url:
+                return repl
+        # If link is a Cloudflare/Lasso page, prefer verification link for cards
+        if "getlasso.co" in lower_url or "cloudflare" in lower_url:
+            return AXIS_REPLACEMENTS[0][1]
+    return url
+
+
+# Simple TinyURL shortener (fallback to original URL if API fails)[12][18]
+def shorten(url):
+    try:
+        r = requests.get("https://tinyurl.com/api-create.php", params={"url": url}, timeout=10)
+        if r.status_code == 200 and r.text.startswith("http"):
+            return r.text.strip()
+    except Exception:
+        pass
+    return url
 
 
 def build_caption(entry, url):
@@ -68,7 +96,7 @@ def post_text(text):
     payload = {
         "chat_id": TELEGRAM_CHANNEL_ID,
         "text": text,
-        "disable_web_page_preview": False
+        "disable_web_page_preview": False  # allow link preview for images and cards
     }
     r = requests.post(api, json=payload, timeout=30)
     r.raise_for_status()
@@ -78,8 +106,17 @@ def post_photo(photo_url, caption):
     api = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
     data = {"chat_id": TELEGRAM_CHANNEL_ID, "photo": photo_url, "caption": caption}
     r = requests.post(api, data=data, timeout=60)
+    # If photo fails (bad URL), fallback to text so the post still goes out
     if r.status_code >= 400:
-        # fallback to text if photo fails
+        post_text(caption)
+
+
+def dispatch(item, caption, img):
+    # If image present and caption is short enough, prefer photo post[1][2][3][5][14][20].
+    if img and len(caption) <= MAX_CAPTION:
+        post_photo(img, caption)
+    else:
+        # Use text post for longer bodies or missing image (up to 4,096 chars)[2][5][20].
         post_text(caption)
 
 
@@ -118,18 +155,19 @@ def main():
         print("No link for item; skipping")
         return
 
-    caption = build_caption(item, url)
+    # Apply Axis overrides and shorten URL for cleaner messages
+    url = maybe_override_axis(item, url)
+    short_url = shorten(url)
+
+    caption = build_caption(item, short_url)
     img = (item.get("image") or "").strip()
 
-    if img:
-        post_photo(img, caption)
-    else:
-        post_text(caption)
-
+    dispatch(item, caption, img)
     add_history(item)
     print(f"Posted: {item.get('name')}")
 
 
 if __name__ == "__main__":
-    time.sleep(random.randint(0, 60))  # small jitter
+    # small jitter to avoid exact-time collisions
+    time.sleep(random.randint(0, 60))
     main()
