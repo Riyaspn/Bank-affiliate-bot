@@ -1,0 +1,41 @@
+{
+"posts_per_day": 3,
+"rotation_memory_days": 7,
+"calendar": {
+"mon": [
+{ "product_type": "credit_card", "tags_any": ["cashback","lifetime_free"] },
+{ "product_type": "savings_account" },
+{ "product_type": "loan", "tags_any": ["instant_loan","personal_loan"] }
+],
+"tue": [
+{ "product_type": "credit_card", "tags_any": ["fuel","rbl","sbi"] },
+{ "product_type": "fintech_app" },
+{ "product_type": "credit_card", "tags_any": ["travel","premium"] }
+],
+"wed": [
+{ "product_type": "credit_card", "tags_any": ["cashback","axis","icici","hdfc"] },
+{ "product_type": "investment" },
+{ "product_type": "loan" }
+],
+"thu": [
+{ "product_type": "credit_card", "tags_any": ["lifestyle","indusind","hsbc"] },
+{ "product_type": "savings_account" },
+{ "product_type": "fintech_app" }
+],
+"fri": [
+{ "product_type": "credit_card", "tags_any": ["travel","lounge"] },
+{ "product_type": "loan", "tags_any": ["nbfc"] },
+{ "product_type": "credit_card" }
+],
+"sat": [
+{ "product_type": "credit_card", "tags_any": ["cashback","fuel"] },
+{ "product_type": "fintech_app" },
+{ "product_type": "other" }
+],
+"sun": [
+{ "product_type": "credit_card" },
+{ "product_type": "savings_account" },
+{ "product_type": "loan" }
+]
+}
+}
