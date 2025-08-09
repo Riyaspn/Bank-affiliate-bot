@@ -111,7 +111,7 @@ return src
 elems = await page.query_selector_all('[style*="background"]')
 for el in elems[:20]:
 style = await el.get_attribute("style") or ""
-m = re.search(r'background(?:-image)?\s*:\s*url$$['"]?([^)'"]+)', style, re.I)
+m = re.search(r"background(?:-image)?\s*:\s*url$$(?:['"]?)([^)'"]+)", style or '', re.I)
 if m:
 src = absolutize(url, m.group(1))
 if looks_valid_img(src):
