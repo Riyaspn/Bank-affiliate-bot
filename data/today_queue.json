@@ -1,27 +1,21 @@
 [
   {
-    "id": "4062e8cdd1d004bf5dca3f83100728ab",
-    "name": "IndusInd Bank Credit Cards",
+    "id": "32582a484702a838c567cea680c19a4e",
+    "name": "YES Bank Credit Cards",
     "product_type": "credit_card",
     "links": [
       {
-        "type": "official",
-        "label": "Referral Link Generator",
-        "url": "https://myaccount.indusind.com/savingsaccount/ReferralCodelink.aspx"
-      },
-      {
         "type": "network",
-        "label": "Apply – Network Redirect",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Finduseasycredit.indusind.com%2Fcustomer%2Fcredit-card%2Flead"
+        "label": "Cuelinks Campaign",
+        "url": "https://www.cuelinks.com/campaigns/yes-bank-credit-card-affiliate-program"
       }
     ],
     "tags": [
-      "indusind",
-      "cashback",
-      "lifestyle"
+      "yes",
+      "network-only"
     ],
-    "image": "https://myaccount.indusind.com/savingsaccount/images/indusInd-logo.png",
-    "offer_snippet": "Referral Code Link",
+    "image": "https://cdn0.cuelinks.com/merchant/4742/thumb/New_Project_%2837%29.png?1670959593",
+    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | August 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Y",
     "offers": [],
     "status": "active"
   },
@@ -58,22 +52,22 @@
     "status": "active"
   },
   {
-    "id": "1a21aa49c719d1721b3cdbe8610931eb",
-    "name": "Money View",
+    "id": "435921481269f6b6eba7eb37800e5436",
+    "name": "FatakPay",
     "product_type": "loan",
     "links": [
       {
         "type": "network",
         "label": "Cuelinks Campaign",
-        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmoneyview-affiliate-program"
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffatakpay-affiliate-program"
       }
     ],
     "tags": [
-      "personal_loan",
-      "fintech"
+      "instant_loan",
+      "app"
     ],
-    "image": "https://cdn0.cuelinks.com/merchant/5236/thumb/New_Project_-_2023-09-14T172103.272.png?1694712111",
-    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | August 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affilia",
+    "image": "https://cdn0.cuelinks.com/merchant/7167/thumb/download_%284%29.png?1722514443",
+    "offer_snippet": "FatakPay (CPA) Affiliate Program with Payout ₹ 72.00 / Acquisition | August 2025 — Join our FatakPay Affiliate Program for affiliate earnings. Select from payout types like CPS, CPI, or CPL, and explore detailed category",
     "offers": [],
     "status": "active"
   }
