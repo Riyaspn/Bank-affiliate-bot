@@ -1,31 +1,47 @@
-  - name: Setup Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: "3.11"
+name: Enrich Bank Offers (Playwright)
 
-  - name: Install dependencies
-    run: |
-      python -m pip install --upgrade pip
-      if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install playwright beautifulsoup4; fi
-      python -m playwright install --with-deps chromium
+on:
+  schedule:
+    - cron: "30 2 * * 1"  # Mondays 08:00 IST
+  workflow_dispatch:
 
-  - name: Enrich data (images + snippets)
-    env:
-      DATA_FILE: data/bank_offers.json
-      OUT_FILE: data/bank_offers.enriched.json
-      FORCE_REFRESH: "false"
-      NAV_TIMEOUT_MS: "45000"
-      JS_WAIT_MS: "4000"
-    run: |
-      python scripts/fetch_images.py
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-  - name: Commit updated data
-    run: |
-      git config user.name "github-actions[bot]"
-      git config user.email "github-actions[bot]@users.noreply.github.com"
-      if [[ -n "$(git status --porcelain)" ]]; then
-        git add data/bank_offers.enriched.json
-        git commit -m "chore: enrich bank_offers (images + offers)"
-        git push
-      else
-        echo "No changes."
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install playwright beautifulsoup4; fi
+          python -m playwright install --with-deps chromium
+
+      - name: Enrich data (images + snippets)
+        env:
+          DATA_FILE: data/bank_offers.json
+          OUT_FILE: data/bank_offers.enriched.json
+          FORCE_REFRESH: "false"
+          NAV_TIMEOUT_MS: "45000"
+          JS_WAIT_MS: "4000"
+        run: |
+          python scripts/fetch_images.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add data/bank_offers.enriched.json
+            git commit -m "chore: enrich bank_offers (images + offers)"
+            git push
+          else
+            echo "No changes."
