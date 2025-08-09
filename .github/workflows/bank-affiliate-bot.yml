@@ -10,7 +10,6 @@ on:
 
 jobs:
   build-queue:
-    # Run when manually triggered OR at the 00:40 UTC cron
     if: github.event_name == 'workflow_dispatch' || github.event.schedule == '40 0 * * *'
     runs-on: ubuntu-latest
     permissions:
@@ -45,20 +44,31 @@ jobs:
         run: |
           python scripts/build_schedule.py
 
-      - name: Commit queue/state
+      - name: Commit queue/state (robust)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git add data/today_queue.json data/schedule_state.json
-            git commit -m "chore: build today queue"
-            git push
+          CHANGED=0
+          if [ -f "data/today_queue.json" ]; then
+            git add data/today_queue.json
+            CHANGED=1
+          fi
+          if [ -f "data/schedule_state.json" ]; then
+            git add data/schedule_state.json
+            CHANGED=1
+          fi
+          if [ "$CHANGED" -eq 1 ]; then
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: build today queue" || echo "No changes."
+              git push || echo "No push needed."
+            else
+              echo "No staged changes."
+            fi
           else
-            echo "No changes."
+            echo "No files to commit."
           fi
 
   post:
-    # Run when manually triggered OR at any of the three posting crons
     if: |
       github.event_name == 'workflow_dispatch' ||
       github.event.schedule == '15 6 * * *' ||
@@ -98,14 +108,26 @@ jobs:
         run: |
           python scripts/post_to_telegram.py
 
-      - name: Commit history/queue updates
+      - name: Commit history/queue updates (robust)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git add data/post_history.json data/today_queue.json
-            git commit -m "chore: posted one item"
-            git push
+          CHANGED=0
+          if [ -f "data/post_history.json" ]; then
+            git add data/post_history.json
+            CHANGED=1
+          fi
+          if [ -f "data/today_queue.json" ]; then
+            git add data/today_queue.json
+            CHANGED=1
+          fi
+          if [ "$CHANGED" -eq 1 ]; then
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: posted one item" || echo "No changes."
+              git push || echo "No push needed."
+            else
+              echo "No staged changes."
+            fi
           else
-            echo "No changes."
+            echo "No files to commit."
           fi
