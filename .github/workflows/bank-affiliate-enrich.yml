@@ -42,6 +42,15 @@ jobs:
         run: |
           python scripts/scraper.py
 
+      - name: Debug commit block
+        if: always()
+        run: |
+          set -euo pipefail
+          set -x
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git status
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
@@ -52,3 +61,4 @@ jobs:
             git push
           else
             echo "No changes."
+          fi
