@@ -1,0 +1,78 @@
+name: Bank Affiliate Bot
+
+on:
+schedule:
+- cron: "40 0 * * *" # 06:10 IST build queue
+- cron: "15 6 * * *" # 11:45 IST post 1
+- cron: "15 12 * * *" # 17:45 IST post 2
+- cron: "15 18 * * *" # 23:45 IST post 3
+workflow_dispatch:
+
+jobs:
+build-queue:
+if: github.event.schedule == '40 0 * * *' || github.event_name == 'workflow_dispatch'
+runs-on: ubuntu-latest
+permissions:
+contents: write
+steps:
+- uses: actions/checkout@v4
+- uses: actions/setup-python@v5
+with:
+python-version: "3.11"
+- name: Install deps
+run: |
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+- name: Build daily queue
+env:
+DATA_FILE: data/bank_offers.enriched.json
+FALLBACK_DATA_FILE: data/bank_offers.json
+SCHEDULE_FILE: data/schedule_config.json
+QUEUE_FILE: data/today_queue.json
+STATE_FILE: data/schedule_state.json
+run: |
+python scripts/build_schedule.py
+- name: Commit queue/state
+run: |
+git config user.name "github-actions[bot]"
+git config user.email "github-actions[bot]@users.noreply.github.com"
+if [[ -n "$(git status --porcelain)" ]]; then
+git add data/today_queue.json data/schedule_state.json
+git commit -m "chore: build today queue"
+git push
+else
+echo "No changes."
+
+post:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- uses: actions/setup-python@v5
+with:
+python-version: "3.11"
+- name: Install deps
+run: |
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+- name: Post one item
+env:
+TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+DATA_FILE: data/bank_offers.json
+ENRICHED_FILE: data/bank_offers.enriched.json
+QUEUE_FILE: data/today_queue.json
+HISTORY_FILE: data/post_history.json
+run: |
+python scripts/post_to_telegram.py
+- name: Commit history/queue
+permissions:
+contents: write
+run: |
+git config user.name "github-actions[bot]"
+git config user.email "github-actions[bot]@users.noreply.github.com"
+if [[ -n "$(git status --porcelain)" ]]; then
+git add data/post_history.json data/today_queue.json
+git commit -m "chore: posted one item"
+git push
+else:
+echo "No changes."
