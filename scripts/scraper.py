@@ -19,7 +19,6 @@ BANK_KEYWORDS = [
     "welcome bonus", "offer", "discount", "save", "cash back", "%"
 ]
 
-
 def best_link(links):
     if not links:
         return ""
@@ -31,12 +30,10 @@ def best_link(links):
             return l["url"]
     return ""
 
-
 def looks_valid_img(src):
     if not src or not src.strip():
         return False
     return not re.search(r"(sprite|favicon|1x1|pixel|blank|spacer)", src, re.I)
-
 
 def absolutize(base, src):
     if not src:
@@ -44,7 +41,6 @@ def absolutize(base, src):
     if src.startswith("http"):
         return src
     return urljoin(base, src)
-
 
 def extract_offer_snippet(soup: BeautifulSoup) -> str:
     ogt = soup.find("meta", property="og:title")
@@ -67,7 +63,6 @@ def extract_offer_snippet(soup: BeautifulSoup) -> str:
         return (desc.get("content") or "").strip()[:220]
     return ""
 
-
 def extract_offers_texts(soup: BeautifulSoup):
     items = []
     for el in soup.select("li, p"):
@@ -84,23 +79,31 @@ def extract_offers_texts(soup: BeautifulSoup):
             break
     return items[:8]
 
+def prefer_domain_specific_image(url, soup):
+    try:
+        host = urlparse(url).netloc.lower()
+    except Exception:
+        host = ""
+    # Specific grab for Scapia site "Benefits Grid"
+    if "apply.scapia.cards" in host:
+        cand = soup.select_one('img[src*="res.cloudinary.com"][src*="spitha_prod_uploads"][src$=".webp"]')
+        if cand and cand.get("src"):
+            return cand.get("src").strip()
+    return ""
 
 async def pick_image_from_dom(page, url):
-    # 1) og:image
     og = await page.query_selector('meta[property="og:image"]')
     if og:
         c = await og.get_attribute("content")
         if c:
             return absolutize(url, c)
 
-    # 2) twitter:image
     tw = await page.query_selector('meta[name="twitter:image"]')
     if tw:
         c = await tw.get_attribute("content")
         if c:
             return absolutize(url, c)
 
-    # 3) header/nav <img> or first few <img>
     header_imgs = await page.query_selector_all("header img, nav img")
     checked_imgs = header_imgs or await page.query_selector_all("img")
     for img in checked_imgs[:12]:
@@ -110,7 +113,6 @@ async def pick_image_from_dom(page, url):
             if looks_valid_img(src) and any(src.lower().endswith(e) for e in (".png", ".jpg", ".jpeg", ".webp")):
                 return src
 
-    # 4) CSS background-image inline styles
     elems = await page.query_selector_all('[style*="background"]')
     for el in elems[:20]:
         style = await el.get_attribute("style") or ""
@@ -120,7 +122,6 @@ async def pick_image_from_dom(page, url):
             if looks_valid_img(src):
                 return src
 
-    # 5) Largest visible <img>
     imgs = await page.query_selector_all("img")
     max_area = 0
     best = None
@@ -138,7 +139,6 @@ async def pick_image_from_dom(page, url):
     if best:
         return absolutize(url, best)
 
-    # 5.5) Google favicon (often previews better than 1x1 icons)
     try:
         host = urlparse(url).netloc
         if host:
@@ -146,10 +146,8 @@ async def pick_image_from_dom(page, url):
     except Exception:
         pass
 
-    # 6) Avatar fallback
     domain = urlparse(url).netloc.replace("www.", "")
     return f"https://ui-avatars.com/api/?name={domain}&background=random"
-
 
 async def scrape_one(context, entry):
     keep_image = bool(entry.get("image"))
@@ -166,11 +164,15 @@ async def scrape_one(context, entry):
         html = await page.content()
         final_url = page.url
 
+        soup = BeautifulSoup(html, "html.parser")
+
         image = entry.get("image") if (keep_image and not FORCE_REFRESH) else None
+        if not image:
+            preferred = prefer_domain_specific_image(final_url, soup)
+            image = preferred or image
         if not image:
             image = await pick_image_from_dom(page, final_url)
 
-        soup = BeautifulSoup(html, "html.parser")
         offer_snippet = entry.get("offer_snippet", "")
         if not offer_snippet or FORCE_REFRESH:
             offer_snippet = extract_offer_snippet(soup)
@@ -192,7 +194,6 @@ async def scrape_one(context, entry):
     finally:
         await page.close()
 
-
 async def main_async():
     with open(DATA_FILE, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -213,11 +214,8 @@ async def main_async():
         json.dump(results, f, ensure_ascii=False, indent=2)
     print("STATS:", stats)
 
-
 def main():
     asyncio.run(main_async())
 
-
 if __name__ == "__main__":
     main()
-
