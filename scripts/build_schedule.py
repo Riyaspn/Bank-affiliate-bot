@@ -4,24 +4,20 @@ import random
 import datetime
 import hashlib
 
-# Inputs (can be overridden via env in the workflow)
 DATA_FILE = os.getenv("DATA_FILE", "data/bank_offers.enriched.json")
 FALLBACK_DATA_FILE = os.getenv("FALLBACK_DATA_FILE", "data/bank_offers.json")
 SCHEDULE_FILE = os.getenv("SCHEDULE_FILE", "data/schedule_config.json")
 QUEUE_FILE = os.getenv("QUEUE_FILE", "data/today_queue.json")
 STATE_FILE = os.getenv("STATE_FILE", "data/schedule_state.json")
 
-# Optional manual override of weekday (used by workflow_dispatch with input 'day')
-# Accepts: mon, tue, wed, thu, fri, sat, sun, or empty for auto
+# Manual override (workflow input), one of: mon..sun; blank=auto by IST
 DAY_OVERRIDE = os.getenv("DAY_OVERRIDE", "").lower().strip()
-
 
 def load_json(path):
     if not os.path.exists(path):
         return None
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
-
 
 def save_json(path, obj):
     d = os.path.dirname(path)
@@ -30,50 +26,35 @@ def save_json(path, obj):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
 
-
 def weekday_key(dt=None):
-    # If a manual override is provided, use it
-    if DAY_OVERRIDE in {"mon", "tue", "wed", "thu", "fri", "sat", "sun"}:
+    if DAY_OVERRIDE in {"mon","tue","wed","thu","fri","sat","sun"}:
         return DAY_OVERRIDE
-    # Otherwise, compute current IST weekday
     dt = dt or datetime.datetime.utcnow()
-    dt_ist = dt + datetime.timedelta(hours=5, minutes=30)  # Align to IST (+05:30)
-    return ["mon", "tue", "wed", "thu", "fri", "sat", "sun"][dt_ist.weekday()]
-
+    dt_ist = dt + datetime.timedelta(hours=5, minutes=30)
+    return ["mon","tue","wed","thu","fri","sat","sun"][dt_ist.weekday()]
 
 def entry_id(entry):
-    # Stable ID based on name + product_type
     s = (entry.get("name", "") or "") + "|" + (entry.get("product_type", "") or "")
     return hashlib.md5(s.encode("utf-8")).hexdigest()
 
-
 def matches_rule(entry, rule):
-    # product_type filter
     pt = rule.get("product_type")
     if pt and entry.get("product_type") != pt:
         return False
-
-    # tags_any filter (at least one tag must match)
     tags_any = rule.get("tags_any") or []
     if tags_any:
         etags = set(entry.get("tags") or [])
         if not any(t in etags for t in tags_any):
             return False
-
-    # status must be active
     if entry.get("status", "active") != "active":
         return False
-
     return True
-
 
 def filter_by_rule(entries, rule):
     return [e for e in entries if matches_rule(e, rule)]
 
-
 def not_recently_posted(candidates, recent_ids):
     return [e for e in candidates if entry_id(e) not in recent_ids]
-
 
 def build_today_queue(entries, config, state):
     wk = weekday_key()
@@ -82,29 +63,24 @@ def build_today_queue(entries, config, state):
     posts_per_day = int(config.get("posts_per_day", 3))
     mem_days = int(config.get("rotation_memory_days", 7))
 
-    # Build recent ID set from history for rotation
+    # Recent rotation window
     recent_ids = set()
     history = (state or {}).get("history", [])
-    # Consider at most last mem_days * posts_per_day items
     for h in history[-mem_days * posts_per_day:]:
         hid = h.get("id")
         if hid:
             recent_ids.add(hid)
 
     chosen = []
+    chosen_ids = set()
     rng = random.Random()
 
-    # 1) Try to satisfy explicit rules first
-    for rule in day_rules:
-        pool = filter_by_rule(entries, rule)
-        # Avoid recently posted where possible
-        pool_nr = not_recently_posted(pool, recent_ids)
-        pool_use = pool_nr if pool_nr else pool
-        if not pool_use:
-            continue
-        pick = rng.choice(pool_use)
+    def add_pick(pick):
+        pid = entry_id(pick)
+        if pid in chosen_ids:
+            return False
         chosen.append({
-            "id": entry_id(pick),
+            "id": pid,
             "name": pick.get("name"),
             "product_type": pick.get("product_type"),
             "links": pick.get("links"),
@@ -114,58 +90,58 @@ def build_today_queue(entries, config, state):
             "offers": pick.get("offers", []),
             "status": pick.get("status", "active")
         })
+        chosen_ids.add(pid)
+        return True
+
+    # 1) Satisfy rules (avoid recent, ensure unique)
+    for rule in day_rules:
+        pool = filter_by_rule(entries, rule)
+        pool_nr = not_recently_posted(pool, recent_ids)
+        pool_use = pool_nr if pool_nr else pool
+        if not pool_use:
+            continue
+        rng.shuffle(pool_use)
+        for pick in pool_use:
+            if add_pick(pick):
+                break
         if len(chosen) >= posts_per_day:
             break
 
-    # 2) Top up with any active items not already chosen
+    # 2) Top up to posts_per_day with active, prefer not recent, avoid duplicates
     if len(chosen) < posts_per_day:
-        remaining = posts_per_day - len(chosen)
         active = [e for e in entries if e.get("status", "active") == "active"]
-        already = {c["id"] for c in chosen}
-        # Prefer items not recently posted
-        fallback_pool = [e for e in active if entry_id(e) not in already and entry_id(e) not in recent_ids]
-        if len(fallback_pool) < remaining:
-            # allow recent if needed to fill the day
-            extra = [e for e in active if entry_id(e) not in already]
-        else:
-            extra = fallback_pool
-        rng.shuffle(extra)
-        for e in extra[:remaining]:
-            chosen.append({
-                "id": entry_id(e),
-                "name": e.get("name"),
-                "product_type": e.get("product_type"),
-                "links": e.get("links"),
-                "tags": e.get("tags", []),
-                "image": e.get("image", ""),
-                "offer_snippet": e.get("offer_snippet", ""),
-                "offers": e.get("offers", []),
-                "status": e.get("status", "active")
-            })
+        # First: not recent and not already chosen
+        fallback_pool = [e for e in active if entry_id(e) not in chosen_ids and entry_id(e) not in recent_ids]
+        rng.shuffle(fallback_pool)
+        for e in fallback_pool:
+            if add_pick(e) and len(chosen) >= posts_per_day:
+                break
+        # If still short, allow recent but not chosen
+        if len(chosen) < posts_per_day:
+            extra = [e for e in active if entry_id(e) not in chosen_ids]
+            rng.shuffle(extra)
+            for e in extra:
+                if add_pick(e) and len(chosen) >= posts_per_day:
+                    break
 
     return chosen
 
-
 def main():
-    # Load datasets
     data = load_json(DATA_FILE) or load_json(FALLBACK_DATA_FILE) or []
     config = load_json(SCHEDULE_FILE) or {}
     state = load_json(STATE_FILE) or {}
 
-    # Build queue for today (or for DAY_OVERRIDE)
     queue = build_today_queue(data, config, state)
     save_json(QUEUE_FILE, queue)
 
-    # Update state history with today's picks
     hist = state.get("history", [])
     ts = datetime.datetime.utcnow().isoformat()
     for item in queue:
         hist.append({"date": ts, "id": item["id"]})
-    state["history"] = hist[-1000:]  # keep last 1000 entries
+    state["history"] = hist[-1000:]
     save_json(STATE_FILE, state)
 
     print(f"Built queue with {len(queue)} items for {weekday_key()}.")
-
 
 if __name__ == "__main__":
     main()
