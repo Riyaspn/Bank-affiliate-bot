@@ -1,5 +1,25 @@
 [
   {
+    "id": "8696c6c43b084e490547ac6a1393e5bd",
+    "name": "YES Bank (Campaign Listing)",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://www.cuelinks.com/campaigns/yes-bank-credit-card-affiliate-program"
+      }
+    ],
+    "tags": [
+      "yes",
+      "campaign"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/4742/thumb/New_Project_%2837%29.png?1670959593",
+    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | August 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Y",
+    "offers": [],
+    "status": "active"
+  },
+  {
     "id": "8488ab929995ad380cf063af4ef4bf43",
     "name": "Kotak 811 Savings Account",
     "product_type": "savings_account",
@@ -32,22 +52,22 @@
     "status": "active"
   },
   {
-    "id": "256d11ee8f4d0852958b51a394d2a819",
-    "name": "Mahindra Finance",
+    "id": "1a21aa49c719d1721b3cdbe8610931eb",
+    "name": "Money View",
     "product_type": "loan",
     "links": [
       {
         "type": "network",
         "label": "Cuelinks Campaign",
-        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmahindra-finance-affiliate-program"
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmoneyview-affiliate-program"
       }
     ],
     "tags": [
-      "vehicle_loan",
-      "nbfc"
+      "personal_loan",
+      "fintech"
     ],
-    "image": "https://cdn0.cuelinks.com/merchant/3389/thumb/Mahindra-Finance.png?1552993964",
-    "offer_snippet": "Mahindra Finance Affiliate Program with Payout ₹ 2.70 / Lead | August 2025 — Join our Mahindra Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Mahindra Fin",
+    "image": "https://cdn0.cuelinks.com/merchant/5236/thumb/New_Project_-_2023-09-14T172103.272.png?1694712111",
+    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | August 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affilia",
     "offers": [],
     "status": "active"
   }
