@@ -4,11 +4,16 @@ import random
 import datetime
 import hashlib
 
+# Inputs (can be overridden via env in the workflow)
 DATA_FILE = os.getenv("DATA_FILE", "data/bank_offers.enriched.json")
 FALLBACK_DATA_FILE = os.getenv("FALLBACK_DATA_FILE", "data/bank_offers.json")
 SCHEDULE_FILE = os.getenv("SCHEDULE_FILE", "data/schedule_config.json")
 QUEUE_FILE = os.getenv("QUEUE_FILE", "data/today_queue.json")
 STATE_FILE = os.getenv("STATE_FILE", "data/schedule_state.json")
+
+# Optional manual override of weekday (used by workflow_dispatch with input 'day')
+# Accepts: mon, tue, wed, thu, fri, sat, sun, or empty for auto
+DAY_OVERRIDE = os.getenv("DAY_OVERRIDE", "").lower().strip()
 
 
 def load_json(path):
@@ -27,24 +32,28 @@ def save_json(path, obj):
 
 
 def weekday_key(dt=None):
+    # If a manual override is provided, use it
+    if DAY_OVERRIDE in {"mon", "tue", "wed", "thu", "fri", "sat", "sun"}:
+        return DAY_OVERRIDE
+    # Otherwise, compute current IST weekday
     dt = dt or datetime.datetime.utcnow()
-    # Align to IST (+05:30)
-    dt_ist = dt + datetime.timedelta(hours=5, minutes=30)
+    dt_ist = dt + datetime.timedelta(hours=5, minutes=30)  # Align to IST (+05:30)
     return ["mon", "tue", "wed", "thu", "fri", "sat", "sun"][dt_ist.weekday()]
 
 
 def entry_id(entry):
+    # Stable ID based on name + product_type
     s = (entry.get("name", "") or "") + "|" + (entry.get("product_type", "") or "")
     return hashlib.md5(s.encode("utf-8")).hexdigest()
 
 
 def matches_rule(entry, rule):
-    # product_type
+    # product_type filter
     pt = rule.get("product_type")
     if pt and entry.get("product_type") != pt:
         return False
 
-    # tags_any
+    # tags_any filter (at least one tag must match)
     tags_any = rule.get("tags_any") or []
     if tags_any:
         etags = set(entry.get("tags") or [])
@@ -73,7 +82,7 @@ def build_today_queue(entries, config, state):
     posts_per_day = int(config.get("posts_per_day", 3))
     mem_days = int(config.get("rotation_memory_days", 7))
 
-    # Build recent ID set from history
+    # Build recent ID set from history for rotation
     recent_ids = set()
     history = (state or {}).get("history", [])
     # Consider at most last mem_days * posts_per_day items
@@ -85,10 +94,10 @@ def build_today_queue(entries, config, state):
     chosen = []
     rng = random.Random()
 
-    # Pick per rule first
+    # 1) Try to satisfy explicit rules first
     for rule in day_rules:
         pool = filter_by_rule(entries, rule)
-        # avoid recently posted where possible
+        # Avoid recently posted where possible
         pool_nr = not_recently_posted(pool, recent_ids)
         pool_use = pool_nr if pool_nr else pool
         if not pool_use:
@@ -108,15 +117,15 @@ def build_today_queue(entries, config, state):
         if len(chosen) >= posts_per_day:
             break
 
-    # If fewer than posts_per_day, top up with any active not already chosen
+    # 2) Top up with any active items not already chosen
     if len(chosen) < posts_per_day:
         remaining = posts_per_day - len(chosen)
         active = [e for e in entries if e.get("status", "active") == "active"]
         already = {c["id"] for c in chosen}
-        # avoid recent ids too
+        # Prefer items not recently posted
         fallback_pool = [e for e in active if entry_id(e) not in already and entry_id(e) not in recent_ids]
         if len(fallback_pool) < remaining:
-            # allow recent if needed
+            # allow recent if needed to fill the day
             extra = [e for e in active if entry_id(e) not in already]
         else:
             extra = fallback_pool
@@ -138,14 +147,16 @@ def build_today_queue(entries, config, state):
 
 
 def main():
+    # Load datasets
     data = load_json(DATA_FILE) or load_json(FALLBACK_DATA_FILE) or []
     config = load_json(SCHEDULE_FILE) or {}
     state = load_json(STATE_FILE) or {}
 
+    # Build queue for today (or for DAY_OVERRIDE)
     queue = build_today_queue(data, config, state)
     save_json(QUEUE_FILE, queue)
 
-    # Update state history
+    # Update state history with today's picks
     hist = state.get("history", [])
     ts = datetime.datetime.utcnow().isoformat()
     for item in queue:
