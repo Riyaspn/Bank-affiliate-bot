@@ -7,10 +7,25 @@ on:
     - cron: "15 12 * * *"  # Post 2 at 17:45 IST (12:15 UTC)
     - cron: "15 18 * * *"  # Post 3 at 23:45 IST (18:15 UTC)
   workflow_dispatch:
+    inputs:
+      day:
+        description: "Weekday to build & post (manual only)"
+        required: false
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+          - sat
+          - sun
 
 jobs:
   build-queue:
-    # Run when manually triggered OR at the 00:40 UTC cron
+    # Run on morning cron OR any manual run (to allow building queue for selected day)
     if: github.event_name == 'workflow_dispatch' || github.event.schedule == '40 0 * * *'
     runs-on: ubuntu-latest
     permissions:
@@ -35,14 +50,22 @@ jobs:
             pip install requests
           fi
 
-      - name: Build daily queue
+      # Build the queue. If manual with a chosen day, we pass DAY_OVERRIDE environment.
+      - name: Build queue (auto or manual override)
         env:
           DATA_FILE: data/bank_offers.enriched.json
           FALLBACK_DATA_FILE: data/bank_offers.json
           SCHEDULE_FILE: data/schedule_config.json
           QUEUE_FILE: data/today_queue.json
           STATE_FILE: data/schedule_state.json
+          DAY_OVERRIDE: ${{ inputs.day }}
         run: |
+          # Export DAY_OVERRIDE only if manual and not 'auto'
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.day }}" != "auto" ]; then
+            export DAY_OVERRIDE="${{ inputs.day }}"
+          else
+            unset DAY_OVERRIDE
+          fi
           python scripts/build_schedule.py
 
       - name: Commit queue/state (robust)
@@ -60,7 +83,7 @@ jobs:
           fi
           if [ "$CHANGED" -eq 1 ]; then
             if ! git diff --cached --quiet; then
-              git commit -m "chore: build today queue" || echo "No changes."
+              git commit -m "chore: build queue (${{ inputs.day || 'auto' }})"
               git push || echo "No push needed."
             else
               echo "No staged changes."
@@ -99,7 +122,9 @@ jobs:
             pip install requests
           fi
 
-      - name: Post one item to Telegram
+      # Normal scheduled run posts ONE item.
+      - name: Post one item to Telegram (scheduled)
+        if: github.event_name != 'workflow_dispatch'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
@@ -110,7 +135,8 @@ jobs:
         run: |
           python scripts/post_to_telegram.py
 
-      - name: Post all remaining items (manual only)
+      # Manual run: after building (possibly for chosen day), post ALL items for that day.
+      - name: Post all items for selected day (manual only)
         if: github.event_name == 'workflow_dispatch'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -120,10 +146,16 @@ jobs:
           QUEUE_FILE: data/today_queue.json
           HISTORY_FILE: data/post_history.json
         run: |
-          # Try to post up to 3 items in total for today's queue
-          for i in 1 2 3; do
+          # Loop until queue empties or up to a safe upper bound
+          n=0
+          while [ $n -lt 20 ]; do
+            if [ ! -s "data/today_queue.json" ]; then
+              echo "Queue empty, stopping."
+              break
+            fi
             python scripts/post_to_telegram.py || true
-            sleep 5
+            n=$((n+1))
+            sleep 3
           done
 
       - name: Commit history/queue updates (robust)
@@ -141,7 +173,7 @@ jobs:
           fi
           if [ "$CHANGED" -eq 1 ]; then
             if ! git diff --cached --quiet; then
-              git commit -m "chore: posted one item" || echo "No changes."
+              git commit -m "chore: post updates (${{ inputs.day || 'auto' }})"
               git push || echo "No push needed."
             else
               echo "No staged changes."
