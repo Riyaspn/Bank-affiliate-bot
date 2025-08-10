@@ -103,25 +103,42 @@ def apply_link_policy(entry, url):
 
     return url
 
-def build_caption(entry, url):
+def build_caption_photo(entry, short_url):
+    # For photo captions (no clickable anchor), keep it concise with visible short URL
     title = entry.get("offer_snippet") or entry.get("name") or "Offer"
     offers = entry.get("offers", [])[:3]
-    bullets = "\n".join(f"• {o}" for o in offers) if offers else ""
+    bullets = "\n".join(f"-  {o}" for o in offers) if offers else ""
     tags = entry.get("tags", [])
     tag_line = f"\nTags: {', '.join(tags[:5])}" if tags else ""
     caption = (
         f"🏦 {title}\n"
         f"{bullets}\n\n"
-        f"Apply/Know more: {url}{tag_line}\n"
+        f"Apply/Know more: {short_url}{tag_line}\n"
         f"(Disclosure: Affiliate link)"
     ).strip()
     return caption[:MAX_CAPTION]
 
-def post_text(text):
+def build_message_html(entry, short_url):
+    # For text messages: richer formatting and clickable CTA
+    title = entry.get("offer_snippet") or entry.get("name") or "Offer"
+    offers = entry.get("offers", [])[:3]
+    bullets = "\n".join(f"-  {o}" for o in offers) if offers else ""
+    tags = entry.get("tags", [])
+    tag_line = f"\nTags: {', '.join(tags[:5])}" if tags else ""
+    body = (
+        f"🏦 <b>{title}</b>\n"
+        f"{bullets}\n\n"
+        f'<a href="{short_url}">Click here to apply</a>{tag_line}\n'
+        f"(Disclosure: Affiliate link)"
+    ).strip()
+    return body
+
+def post_text_html(text):
     api = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {
         "chat_id": TELEGRAM_CHANNEL_ID,
         "text": text,
+        "parse_mode": "HTML",
         "disable_web_page_preview": False
     }
     r = requests.post(api, json=payload, timeout=HTTP_TIMEOUT)
@@ -132,7 +149,7 @@ def post_photo(photo_url, caption):
     data = {"chat_id": TELEGRAM_CHANNEL_ID, "photo": photo_url, "caption": caption}
     r = requests.post(api, data=data, timeout=HTTP_TIMEOUT)
     if r.status_code >= 400:
-        post_text(caption)
+        post_text_html(caption)  # fallback without HTML formatting
 
 def pick_next_from_queue():
     q = load_json(QUEUE_FILE, default=[])
@@ -159,6 +176,14 @@ def choose_image(entry):
             img = override
     return img
 
+def dispatch(item, short_url, img):
+    caption_photo = build_caption_photo(item, short_url)
+    message_html = build_message_html(item, short_url)
+    if img and len(caption_photo) <= MAX_CAPTION:
+        post_photo(img, caption_photo)
+    else:
+        post_text_html(message_html)
+
 def main():
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHANNEL_ID:
         print("Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHANNEL_ID")
@@ -182,15 +207,10 @@ def main():
     if not url:
         print("Skipping item due to paused/bad campaign link")
         return
+
     short_url = shorten(url)
-
-    caption = build_caption(item, short_url)
     img = choose_image(item)
-
-    if img and len(caption) <= MAX_CAPTION:
-        post_photo(img, caption)
-    else:
-        post_text(caption)
+    dispatch(item, short_url, img)
 
     add_history(item)
     print(f"Posted: {item.get('name')} | Remaining today: {len(remaining)}")
