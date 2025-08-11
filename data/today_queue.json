@@ -1,73 +1,82 @@
 [
   {
-    "id": "be949c6d0fc6509dacc9df81d5cf0fd3",
-    "name": "RBL Bank – IndianOil Credit Card",
+    "id": "99630b23a3d3bcb27e3a076739b7d951",
+    "name": "IDFC FIRST Bank Credit Cards",
     "product_type": "credit_card",
     "links": [
       {
         "type": "network",
-        "label": "Product Page – Redirect",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.rblbank.com%2Findianoil-rbl-bank-credit-card"
+        "label": "Apply – Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.idfcfirstbank.com%2Fcredit-card%2Fntb-diy%2Fapply"
       }
     ],
     "tags": [
-      "fuel",
-      "rbl"
+      "idfc",
+      "lifetime_free"
     ],
-    "image": "https://drws17a9qx558.cloudfront.net/document/images/webp/go-account-zero-balance-online-savings-mb.webp",
-    "offer_snippet": "IndianOil RBL Bank Credit Card | RBL Bank",
+    "image": "https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/etb/pre-approved/1500.jpg",
+    "offer_snippet": "Credit Card Application - Apply for Credit Card — Credit Card Application - Super saver interest rates with 10 times rewards on monthly spends. Life time free credit card with best customer reviews. Apply now!",
     "offers": [
-      "NRI Deposits Top 3 Products NRE Deposits NRO Deposits FCNR(B) Deposits Yield Maximiser NRO Tax Saver Fixed Deposits",
-      "NRO Tax Saver Fixed Deposits",
-      "Credit Card Offers Top 3 Products Flights, Hotels & Travel Lifestyle Electronics EMI Offers Exclusive Facilities Others",
-      "Debit Card Offers Top 3 Products Accessories Flights, Hotels & Travel Lifestyle Food Delivery & Dining Health & Welleness",
-      "Credit Cards Set Your Credit Card PIN Online Card Payment Online Card Account Card Settings Redeem Reward Points Card Activation Save your Card on Merchants",
-      "Redeem Reward Points",
-      "Save your Card on Merchants",
-      "NRI Deposits NRE Deposits NRO Deposits FCNR(B) Deposits Yield Maximiser NRO Tax Saver Fixed Deposits"
+      "Low interest rates starting from 8.5% p.a.",
+      "Upto 10X rewards 10X rewards on your birthday, and crossing the spend threshold, on certain variants",
+      "Lifetime FREE Credit Card",
+      "*For more details & exclusions on reward points, please visit our website",
+      "I expected better features and rewards",
+      "We regret to inform you that we are currently unable to process your application in accordance with our internal policies. Rest assured, we're working towards bringing a suitable offer for you soon.",
+      "We just need few more details to unlock your offer These details will help us to enhance our offer and provide the best offer, personalized for you",
+      "We just need few more details to unlock your offer"
     ],
     "status": "active"
   },
   {
-    "id": "e51513f31f18471a88f3686487a053ba",
-    "name": "Kiwi (Credit on UPI)",
-    "product_type": "fintech_app",
+    "id": "8488ab929995ad380cf063af4ef4bf43",
+    "name": "Kotak 811 Savings Account",
+    "product_type": "savings_account",
     "links": [
       {
+        "type": "official",
+        "label": "Open 811 Account",
+        "url": "https://www.kotak811.com/open-zero-balance-savings-account"
+      },
+      {
         "type": "network",
-        "label": "Apply – Kiwi",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.gokiwi.in%2F"
+        "label": "Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.kotak811.com%2Fopen-zero-balance-savings-account"
       }
     ],
     "tags": [
-      "credit_on_upi",
-      "fintech"
+      "zero_balance",
+      "digital_kyc"
     ],
-    "image": "https://apply.gokiwi.in/og-gokiwi.png",
-    "offer_snippet": "Kiwi: Your Virtual UPI Rupay Credit Card — With Kiwi, make credit card payments through UPI anywhere & everywhere",
+    "image": "https://www.kotak811.int/images/social-share.png",
+    "offer_snippet": "Open Zero Balance Savings Account Online in 3 Minutes | Kotak 811 | Kotak Mahindra Bank — Open Kotak 811 Zero Balance Savings Account online in 3 mins & enjoy 6% interest p.a. with ActivMoney. Get up to ₹6,000 cashback w",
     "offers": [
-      "Get 5% Cashback",
-      "Free airport lounge access"
+      "Up to ₹250* cashback on UPI payments",
+      "Earn up to 6% Interest p.a. with ActivMoney^",
+      "\"Wow! Loving the Kotak811 zero balance account. They offer free & fast fund transfer option as well\"",
+      "Looking for a hassle-free way to save and manage your money? Open Kotak811 zero balance savings account gives you the flexibility to bank on your terms. Here are a host of benefits you can enjoy:",
+      "1. Experience zero balance freedom: Save at your pace with no minimum balance requirement—no penalties, just convenience.",
+      "*Rewards and Cashback Terms and Conditions"
     ],
     "status": "active"
   },
   {
-    "id": "15691be3c1581ffa5a13a08e682c9cce",
-    "name": "Scapia Credit Card",
-    "product_type": "credit_card",
+    "id": "1a21aa49c719d1721b3cdbe8610931eb",
+    "name": "Money View",
+    "product_type": "loan",
     "links": [
       {
         "type": "network",
-        "label": "Apply – Scapia",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.scapia.cards%2Flanding_page"
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmoneyview-affiliate-program"
       }
     ],
     "tags": [
-      "travel",
+      "personal_loan",
       "fintech"
     ],
-    "image": "https://res.cloudinary.com/scapiacards/image/upload/q_85/v1751282414/spitha_prod_uploads/2025_06/Frame1321316845_1751282412655.webp",
-    "offer_snippet": "Scapia — Check your eligibility to apply for the Scapia Federal Credit Card",
+    "image": "https://cdn0.cuelinks.com/merchant/5236/thumb/New_Project_-_2023-09-14T172103.272.png?1694712111",
+    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | August 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affilia",
     "offers": [],
     "status": "active"
   }
