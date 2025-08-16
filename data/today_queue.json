@@ -1,26 +1,5 @@
 [
   {
-    "id": "abb1d3988ff04811cd9e539a4881f623",
-    "name": "Jupiter Money (App)",
-    "product_type": "fintech_app",
-    "links": [
-      {
-        "type": "network",
-        "label": "Play Store – Redirect",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dmoney.jupiter"
-      }
-    ],
-    "tags": [
-      "neobank",
-      "upi",
-      "savings"
-    ],
-    "image": "https://play-lh.googleusercontent.com/DnJF-WDgmtEyTRqTY5CNBNFNIRLN3ztoe43h2ToqA70BQY6HJa1cyPM1s42NWipokS7X",
-    "offer_snippet": "Jupiter: Cards, UPI, Banking - Apps on Google Play — UPI payments, RuPay Credit Card, Savings Account, Loans, Mutual Funds & FD",
-    "offers": [],
-    "status": "active"
-  },
-  {
     "id": "375c489c7c172f79c39fbcbec103302a",
     "name": "Aditya Birla Finance",
     "product_type": "other",
