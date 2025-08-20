@@ -1,25 +1,5 @@
 [
   {
-    "id": "9122ee0387f2946aed81a2cd49238581",
-    "name": "AU Small Finance Bank Credit Card",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "network",
-        "label": "Apply – AU Onboarding",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fcconboarding.aubank.in%2Fauccself%2F"
-      }
-    ],
-    "tags": [
-      "au",
-      "cashback"
-    ],
-    "image": "https://www.google.com/s2/favicons?domain=cconboarding.aubank.in&sz=128",
-    "offer_snippet": "Attention Required! | Cloudflare",
-    "offers": [],
-    "status": "active"
-  },
-  {
     "id": "1a21aa49c719d1721b3cdbe8610931eb",
     "name": "Money View",
     "product_type": "loan",
