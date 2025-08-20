@@ -1,1 +1,64 @@
-[]
+[
+  {
+    "id": "9122ee0387f2946aed81a2cd49238581",
+    "name": "AU Small Finance Bank Credit Card",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Apply – AU Onboarding",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fcconboarding.aubank.in%2Fauccself%2F"
+      }
+    ],
+    "tags": [
+      "au",
+      "cashback"
+    ],
+    "image": "https://www.google.com/s2/favicons?domain=cconboarding.aubank.in&sz=128",
+    "offer_snippet": "Attention Required! | Cloudflare",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "1a21aa49c719d1721b3cdbe8610931eb",
+    "name": "Money View",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmoneyview-affiliate-program"
+      }
+    ],
+    "tags": [
+      "personal_loan",
+      "fintech"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/5236/thumb/New_Project_-_2023-09-14T172103.272.png?1694712111",
+    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | August 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affilia",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "33301b66deb88b5f36b575faf10e8260",
+    "name": "HSBC India Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Apply – Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.accountopening.hsbc.co.in%2Fcredit-cards%2F%23!%2Fapp%2Fjourney%2Fcontact-details-VPC"
+      }
+    ],
+    "tags": [
+      "hsbc",
+      "premium"
+    ],
+    "image": "https://www.accountopening.hsbc.co.in/credit-cards/resources/images/HSBC_Logo.png",
+    "offer_snippet": "Contact details: Step 2 | HSBC",
+    "offers": [
+      "NIL Joining & Annual Fees"
+    ],
+    "status": "active"
+  }
+]
