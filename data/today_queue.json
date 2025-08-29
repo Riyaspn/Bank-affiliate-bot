@@ -1,25 +1,5 @@
 [
   {
-    "id": "15691be3c1581ffa5a13a08e682c9cce",
-    "name": "Scapia Credit Card",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "network",
-        "label": "Apply – Scapia",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.scapia.cards%2Flanding_page"
-      }
-    ],
-    "tags": [
-      "travel",
-      "fintech"
-    ],
-    "image": "https://res.cloudinary.com/scapiacards/image/upload/q_85/v1751282414/spitha_prod_uploads/2025_06/Frame1321316845_1751282412655.webp",
-    "offer_snippet": "Scapia — Check your eligibility to apply for the Scapia Federal Credit Card",
-    "offers": [],
-    "status": "active"
-  },
-  {
     "id": "649ed2f65ae60d58cfc34ab1071730cf",
     "name": "Muthoot Finance",
     "product_type": "loan",
