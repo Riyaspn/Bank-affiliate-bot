@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "9122ee0387f2946aed81a2cd49238581",
+    "name": "AU Small Finance Bank Credit Card",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Apply – AU Onboarding",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fcconboarding.aubank.in%2Fauccself%2F"
+      }
+    ],
+    "tags": [
+      "au",
+      "cashback"
+    ],
+    "image": "https://www.google.com/s2/favicons?domain=cconboarding.aubank.in&sz=128",
+    "offer_snippet": "Attention Required! | Cloudflare",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "435921481269f6b6eba7eb37800e5436",
+    "name": "FatakPay",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffatakpay-affiliate-program"
+      }
+    ],
+    "tags": [
+      "instant_loan",
+      "app"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/7167/thumb/download_%284%29.png?1722514443",
+    "offer_snippet": "FatakPay (CPA) Affiliate Program with Payout ₹ 72.00 / Acquisition | September 2025 — Join our FatakPay Affiliate Program for affiliate earnings. Select from payout types like CPS, CPI, or CPL, and explore detailed categ",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "8696c6c43b084e490547ac6a1393e5bd",
+    "name": "YES Bank (Campaign Listing)",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://www.cuelinks.com/campaigns/yes-bank-credit-card-affiliate-program"
+      }
+    ],
+    "tags": [
+      "yes",
+      "campaign"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/4742/thumb/New_Project_%2837%29.png?1670959593",
+    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | September 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Chec",
+    "offers": [],
+    "status": "active"
+  }
+]
