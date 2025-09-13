@@ -1,31 +1,5 @@
 [
   {
-    "id": "4062e8cdd1d004bf5dca3f83100728ab",
-    "name": "IndusInd Bank Credit Cards",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "official",
-        "label": "Referral Link Generator",
-        "url": "https://myaccount.indusind.com/savingsaccount/ReferralCodelink.aspx"
-      },
-      {
-        "type": "network",
-        "label": "Apply – Network Redirect",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Finduseasycredit.indusind.com%2Fcustomer%2Fcredit-card%2Flead"
-      }
-    ],
-    "tags": [
-      "indusind",
-      "cashback",
-      "lifestyle"
-    ],
-    "image": "https://myaccount.indusind.com/savingsaccount/images/indusInd-logo.png",
-    "offer_snippet": "Referral Code Link",
-    "offers": [],
-    "status": "active"
-  },
-  {
     "id": "abb1d3988ff04811cd9e539a4881f623",
     "name": "Jupiter Money (App)",
     "product_type": "fintech_app",
