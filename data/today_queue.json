@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "id": "4062e8cdd1d004bf5dca3f83100728ab",
+    "name": "IndusInd Bank Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "official",
+        "label": "Referral Link Generator",
+        "url": "https://myaccount.indusind.com/savingsaccount/ReferralCodelink.aspx"
+      },
+      {
+        "type": "network",
+        "label": "Apply – Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Finduseasycredit.indusind.com%2Fcustomer%2Fcredit-card%2Flead"
+      }
+    ],
+    "tags": [
+      "indusind",
+      "cashback",
+      "lifestyle"
+    ],
+    "image": "https://myaccount.indusind.com/savingsaccount/images/indusInd-logo.png",
+    "offer_snippet": "Referral Code Link",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "abb1d3988ff04811cd9e539a4881f623",
+    "name": "Jupiter Money (App)",
+    "product_type": "fintech_app",
+    "links": [
+      {
+        "type": "network",
+        "label": "Play Store – Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dmoney.jupiter"
+      }
+    ],
+    "tags": [
+      "neobank",
+      "upi",
+      "savings"
+    ],
+    "image": "https://play-lh.googleusercontent.com/DnJF-WDgmtEyTRqTY5CNBNFNIRLN3ztoe43h2ToqA70BQY6HJa1cyPM1s42NWipokS7X",
+    "offer_snippet": "Jupiter: Cards, UPI, Banking - Apps on Google Play — UPI payments, RuPay Credit Card, Savings Account, Loans, Mutual Funds & FD",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "ffcc5bab4d82feb1c68022dffc4106c6",
+    "name": "Bajaj Finserv (Cards/Loans)",
+    "product_type": "other",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://www.cuelinks.com/campaigns/bajaj-finserv-credit-card-affiliate-program"
+      }
+    ],
+    "tags": [
+      "nbfc",
+      "emi_card",
+      "loans"
+    ],
+    "image": "https://www.cuelinks.com/assets/home/cuelinks-logo-480babd65e83d854133844ad8fbaefefc64c1e2b984225839ff0b85dfd5abc46.png",
+    "offer_snippet": "Follow Us",
+    "offers": [],
+    "status": "active"
+  }
+]
