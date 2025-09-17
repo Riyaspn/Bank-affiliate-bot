@@ -1,1 +1,63 @@
-[]
+[
+  {
+    "id": "9122ee0387f2946aed81a2cd49238581",
+    "name": "AU Small Finance Bank Credit Card",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Apply – AU Onboarding",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fcconboarding.aubank.in%2Fauccself%2F"
+      }
+    ],
+    "tags": [
+      "au",
+      "cashback"
+    ],
+    "image": "https://www.google.com/s2/favicons?domain=cconboarding.aubank.in&sz=128",
+    "offer_snippet": "Attention Required! | Cloudflare",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "435921481269f6b6eba7eb37800e5436",
+    "name": "FatakPay",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffatakpay-affiliate-program"
+      }
+    ],
+    "tags": [
+      "instant_loan",
+      "app"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/7167/thumb/download_%284%29.png?1722514443",
+    "offer_snippet": "FatakPay (CPA) Affiliate Program with Payout ₹ 72.00 / Acquisition | September 2025 — Join our FatakPay Affiliate Program for affiliate earnings. Select from payout types like CPS, CPI, or CPL, and explore detailed categ",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "2f67ce33ca38bdab09a715624dfa828b",
+    "name": "PNB MetLife (PNB)",
+    "product_type": "other",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fpnb-metlife-affiliate-program"
+      }
+    ],
+    "tags": [
+      "insurance"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/3080/thumb/pnb.png?1515177684",
+    "offer_snippet": "PNB Metlife Affiliate Program with Payout ₹ 121.50 / Lead | September 2025 — Join our PNB Metlife Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check PNB Metlife affil",
+    "offers": [
+      "We need to maintain a sale conversion rate of 1 % on the leads you achieve. If you cannot achieve this, then the billing will be done on a pro-rata basis."
+    ],
+    "status": "active"
+  }
+]
