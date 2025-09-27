@@ -566,5 +566,9 @@
   {
     "name": "Bank of Baroda Credit Cards",
     "ts": 1758911845
+  },
+  {
+    "name": "ICICI Bank Credit Cards",
+    "ts": 1758954956
   }
 ]
