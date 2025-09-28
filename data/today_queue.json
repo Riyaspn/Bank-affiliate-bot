@@ -1,25 +1,5 @@
 [
   {
-    "id": "8696c6c43b084e490547ac6a1393e5bd",
-    "name": "YES Bank (Campaign Listing)",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "network",
-        "label": "Cuelinks Campaign",
-        "url": "https://www.cuelinks.com/campaigns/yes-bank-credit-card-affiliate-program"
-      }
-    ],
-    "tags": [
-      "yes",
-      "campaign"
-    ],
-    "image": "https://cdn0.cuelinks.com/merchant/4742/thumb/New_Project_%2837%29.png?1670959593",
-    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | September 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Chec",
-    "offers": [],
-    "status": "active"
-  },
-  {
     "id": "8488ab929995ad380cf063af4ef4bf43",
     "name": "Kotak 811 Savings Account",
     "product_type": "savings_account",
