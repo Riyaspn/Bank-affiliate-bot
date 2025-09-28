@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": "8696c6c43b084e490547ac6a1393e5bd",
+    "name": "YES Bank (Campaign Listing)",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://www.cuelinks.com/campaigns/yes-bank-credit-card-affiliate-program"
+      }
+    ],
+    "tags": [
+      "yes",
+      "campaign"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/4742/thumb/New_Project_%2837%29.png?1670959593",
+    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | September 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Chec",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "8488ab929995ad380cf063af4ef4bf43",
+    "name": "Kotak 811 Savings Account",
+    "product_type": "savings_account",
+    "links": [
+      {
+        "type": "official",
+        "label": "Open 811 Account",
+        "url": "https://www.kotak811.com/open-zero-balance-savings-account"
+      },
+      {
+        "type": "network",
+        "label": "Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.kotak811.com%2Fopen-zero-balance-savings-account"
+      }
+    ],
+    "tags": [
+      "zero_balance",
+      "digital_kyc"
+    ],
+    "image": "https://www.kotak811.int/images/social-share.png",
+    "offer_snippet": "Open Zero Balance Savings Account Online in 3 Minutes | Kotak 811 | Kotak Mahindra Bank — Open Kotak 811 Zero Balance Savings Account online in 3 mins & enjoy 5.75% interest p.a. with ActivMoney. Get up to ₹6,000 cashbac",
+    "offers": [
+      "Up to ₹250* cashback on UPI payments",
+      "Earn up to 5.75% Interest p.a. with ActivMoney^",
+      "\"Wow! Loving the Kotak811 zero balance account. They offer free & fast fund transfer option as well\"",
+      "Looking for a hassle-free way to save and manage your money? Open Kotak811 zero balance savings account gives you the flexibility to bank on your terms. Here are a host of benefits you can enjoy:",
+      "1. Experience zero balance freedom: Save at your pace with no minimum balance requirement—no penalties, just convenience.",
+      "*Rewards and Cashback Terms and Conditions"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "1a21aa49c719d1721b3cdbe8610931eb",
+    "name": "Money View",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmoneyview-affiliate-program"
+      }
+    ],
+    "tags": [
+      "personal_loan",
+      "fintech"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/5236/thumb/New_Project_-_2023-09-14T172103.272.png?1694712111",
+    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | September 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affi",
+    "offers": [],
+    "status": "active"
+  }
+]
