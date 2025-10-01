@@ -1,31 +1,5 @@
 [
   {
-    "id": "5b3a7911f36ac641767b018736fbfa14",
-    "name": "Axis Bank Credit Cards",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "official",
-        "label": "Partner Info",
-        "url": "https://getlasso.co/affiliate/axis-bank/"
-      },
-      {
-        "type": "network",
-        "label": "Leap Verification (Redirect)",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fleap.axisbank.com%2Fverification"
-      }
-    ],
-    "tags": [
-      "axis",
-      "cashback",
-      "co-brands"
-    ],
-    "image": "https://www.google.com/s2/favicons?domain=getlasso.co&sz=128",
-    "offer_snippet": "Attention Required! | Cloudflare",
-    "offers": [],
-    "status": "active"
-  },
-  {
     "id": "649ed2f65ae60d58cfc34ab1071730cf",
     "name": "Muthoot Finance",
     "product_type": "loan",
