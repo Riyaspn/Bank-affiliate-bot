@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "id": "4062e8cdd1d004bf5dca3f83100728ab",
+    "name": "IndusInd Bank Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "official",
+        "label": "Referral Link Generator",
+        "url": "https://myaccount.indusind.com/savingsaccount/ReferralCodelink.aspx"
+      },
+      {
+        "type": "network",
+        "label": "Apply – Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Finduseasycredit.indusind.com%2Fcustomer%2Fcredit-card%2Flead"
+      }
+    ],
+    "tags": [
+      "indusind",
+      "cashback",
+      "lifestyle"
+    ],
+    "image": "https://myaccount.indusind.bank.in/savingsaccount/images/indusInd-logo.png",
+    "offer_snippet": "Referral Code Link",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "e51513f31f18471a88f3686487a053ba",
+    "name": "Kiwi (Credit on UPI)",
+    "product_type": "fintech_app",
+    "links": [
+      {
+        "type": "network",
+        "label": "Apply – Kiwi",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.gokiwi.in%2F"
+      }
+    ],
+    "tags": [
+      "credit_on_upi",
+      "fintech"
+    ],
+    "image": "https://apply.gokiwi.in/og-gokiwi.png",
+    "offer_snippet": "Kiwi: Your Virtual UPI Rupay Credit Card — With Kiwi, make credit card payments through UPI anywhere & everywhere",
+    "offers": [
+      "Get 5% Cashback",
+      "Free airport lounge access"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "a515eb32b5a3e01c510cc4a2164a7dc2",
+    "name": "Federal Bank (Affiliate)",
+    "product_type": "other",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffederal-bank-affiliate-program"
+      }
+    ],
+    "tags": [
+      "federal"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/4230/thumb/New_Project_-_2021-10-22T143212.400_%281%29.png?1634913322",
+    "offer_snippet": "Federal Bank Affiliate Program with Payout ₹ 1190.70 / Lead | September 2025 — Join our Federal Bank Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Federal Bank a",
+    "offers": [],
+    "status": "active"
+  }
+]
