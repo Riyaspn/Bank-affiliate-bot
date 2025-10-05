@@ -1,25 +1,5 @@
 [
   {
-    "id": "213f70ffec7f5a4542084a3c11fefbef",
-    "name": "Bank of Baroda Credit Cards",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "network",
-        "label": "Cuelinks Campaign",
-        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fbank-of-baroda-credit-card-affiliate-program"
-      }
-    ],
-    "tags": [
-      "bob",
-      "cards"
-    ],
-    "image": "https://www.cuelinks.com/photos/thumb/missing.png",
-    "offer_snippet": "Bank of Baroda Credit Card Affiliate Program with Payout ₹ 850.50 / Lead | September 2025 — Join our Bank of Baroda Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CP",
-    "offers": [],
-    "status": "active"
-  },
-  {
     "id": "8488ab929995ad380cf063af4ef4bf43",
     "name": "Kotak 811 Savings Account",
     "product_type": "savings_account",
