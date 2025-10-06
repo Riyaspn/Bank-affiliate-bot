@@ -36,7 +36,7 @@
       "This offer is not applicable to physical Credit Card applications.",
       "HDFC Bank employees are not eligible for the referral voucher, and the referrer and referee will not be rewarded if the referee already holds an HDFC Bank Credit Card."
     ],
-    "last_checked_ts": 1759116427
+    "last_checked_ts": 1759720510
   },
   {
     "name": "SBI Card – BPCL Octane",
@@ -56,11 +56,11 @@
       "cashback",
       "sbi"
     ],
-    "image": "data:image/png;base64,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",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAACsCAYAAADotPvyAAAABHNCSVQICAgIfAhkiAAAGOhJREFUeF7tXQl4VFWWvu9VVSqVhCzsKgJ2t8vo2INjuzUCAXEBCQm2Ao4b2DMohLBMO3ZPN47Y6nzT6giBgNhOj7StzaaSVDoBBTuVgCiOC3aLILYDKoskgQSy1vLe7f++SsVa3nJfLXS96P2+fIS8c5fzv3PvOffcc88TSB8sGyZeu5QKwj0CISMJJa2EUA+htDJDclRN83jw/+QX9NW3yobrx6wFR/eocgVQqUAqRSKVT9+2a08yOe9TQK6fOHqRIIjLeACilHooIY/cvn2nh4feiKbPALm5sDDfZ5cOEoHkGzEd8ZxN+YB9dqJTvs8AuX7imEpBIMWmQAwRY8rLhE5LRDr7BJC666IJZAUiXRbv2mlpINl09jqkZWBilgm8tEkhmRkB23nxTHPLArlu4rWFgiA8r5g4SSxob/b0bTuY5jdVrAtk4dUjRYdjKezEEiiYvBDXWf2cJDs3k+QPzCEZTjs5sOcw8fskblAoJVUzt+8o4a7QQ2hZIKMZpe4lhwgRRkT/vbWpjby+/j0TuND6Gdt2FpqooJD2CSBpzc9HEcn2gRbz72zbRw7tP86JzTcZSPdDi4CSpiF+5LMm8mbtXi4gKaHlM7ftZO2ZKn1DIt0PVYJrTRuy8XAL8Wz+kAuYeE2gvgIk2zf/gxZS/u4A2b19P5SOnzgyHOTowWZV0ngVTd9ZI90PYdvMXzau9MQQY+/9uTNgHxWPDdkngKSbl+YTm9TCC2PHqS5S88LuGHKZ0vHf6C0irV5SSKhQxwvk3t0Hyd53Po8gp1RePHP7m8t521Cjs/waqQBpc9WR0feCP8zwz94i5LC2q3HzszuiDfTfzti2Y1YiIPaNqR0ukedeRkgWvGgMzEC3KjZ/WPsW6Wzzhp4lBcQ+ASRjgppQNp99dMT3Xt2Bt4gsLJ/xxg5mNiWlWH5q9wCpa5CHkJL8XiLaHG+LJY9fkxT0whrpE0AqYEJ7d7U378Omd6jD6YrASQr4iSxLJDM7lwiiWC9MfbTwWyB1EGh97setUsDX6wlS1i5RIK5+BSQzJzdU81sgjaQoGkinK5u4cvOJaHeEV/0WSCMgO16c10pkkseAc2blsGkcW4WSQ0Lxo+cZtWX2eZ9ZI01pb8lWIExbmtRAgW8ckFKHl7TvPbzee7L9EzDfLIr04wGOzLeEZZu6zEphOL3lgTxeOvV6QuUxRBBGZ507aIJr+ABiy8mMwIT6JeJvaSedX54k3mMnieiwB59jI4TIi57f6ad2kfz7gIrqV+IB1JJAniibNEyS7f8NnTwFTGdFMy44bMSWlaGskXK3n0hdPuLv9gE1ShwuZxBDgIhzcLXy8uBV7tvMgmkpIFsWleT7fPJWAHAVL6MMwAB+7JkZxIGfIIgUIOqwTsnLg1ebA9MyQB6//+YbBdFWDYM7wpYJB1QOSIT9SAEZ/waIhCnNwMvIzlTsSTNFlMldA59xv8hbx1zrvK0mme546ZR/E4j4hF6zvs5u4m0POipEgGZ3QgJdGbAhbZHrpZE0hqgp+Quk8nxeVtIeyKZ5RYuhEJ5OyoGnzsKoBhhm/xWDKtzv8oCZ1kAeLy26SyDCC4ZrGg+ncdHQXwxeVf2fPFXTFsjm0uKrECH2Ng8TXDTsVMcst5TUYHozy8CwmG3asMFkEJyeUzSwy072QbMOjIf/6DGYnNG91TET/n/I6urv8vCUlkA2zitywz4pYoMzdTyowXHcSwMl7ZDIfpYEsqm0aA6svGeVwccrSuGcJyjSMM65hI2LiOeNJIOmqXTyBTK1fYAprexWEpfIBFHEGGRXd87Qp17vMOIvbYCki29zNfm63wd8F3096MSASKy2sq4cw9Q+2wjE0EvnoUs5TeO8qa9ABG9JXkcJw8iQfB7mDzvnNSxpIZGNc4vKiCisiBltMrAwhECbQJICs89aU7uWp4m/OZDNpUXFMhFexWBj3NnxrpHx1ovQUXiJIqWFg56prk97ICGJkwCfG+tij4MwcsjxAZIcMVYkjJI7B612v5TWQDbPLZ4oi3Sb3iDjAZLKkG+1sxoeNKJoEHT6yyGrqh/mqfo3mdrN84smSJTUYh8d9LJqFCrDojTh/mIuNMEm6vsaOVAJvUCYsWuGrHbP5ahievfJ06YuDbTzTSDAzkXbr6jMKgnHA14/yciKPDbQa9zf6SWOLN13Y3L8aaq1G0unMlPiN0bcMKdsZ0uH4pR19ouMmtCq68dxgj3TkbA0RimclyCRdxqNlz2PmNq0aslS/GUcfh4Rih7z8DQQTdM4rzDHJuRcKsnkItyZvgRdtKO9ywSqtBsRBaHWPjsa6D7dqTzKwPkKD5BsSrPjhIwcPtBN8LUJW8TpPPQxayQiuxiA45TL4pJ9WvMb72O7Jl8QaozKZCC2cBfLVFm92E3UC0HLOLDBAXsh1r1BPB2r0XSf7sAhlb/3EZPIzNyYs62IqhRvrKOljWQX9FPWx3gLc2yI8OSGO0nw++Yhq9xcm4RIiaxeUoJIhYcxP0YpA0JUQuPrH3aACJKVusKUSmdru3LeEl4ycFTg7KcDJJhn9USbzRDweEYPcKvgRuO6BSYoMdj2wELEC87C1BsZ3eGJ+o+9ONJM5goe0YXsw3p4qkM52YsuDqx5mbnZmhh0ox5TSNn9+8WczcQDXEwdM45dratnoUZPeD4mMgabiuLrwIEVfrSKHpChwy47rnu48rXBNhq3DOuA2Z3qx7O0Fnvtm43aYM+FoIIRYo1OSk/h73ua3/johzQgaR6B8nQSTcNMm85TnTFTOZzO5rB94sxyrbc57TFjk/Bi2ZRmJ/yu/Bxiz1DdGBkOTTm+xRprd2qy9xqUDTPXDEtwJ8TisGVSiIG1Ato9JGDfEwoyapo/BbcGxOmYehfjuV32B76HkI8hhi1rEOhJIdRXm81h/73LKy0dvMnzFU4Q74PmXxPeVMDnI12tQa1uR+iJqyAnrqEwJcXG4tRRZtjZbMPO5gaeDuLa2RwswRXfLOcYKovXg3lobuEsWZbPx+95og0n0Fj8owuek4A3gDAdOeIRA0902Grsft9/DduwM+KeW2Np0c/R9uOhCgFIYhfWxVBxYf1ktqPZElRubSQrD6F/Opo+5UBqDfzgrbiMbrf/gGl5idJroPWHQpJ7bUesQxJsjJN2u20/pLsh05ZRMXht7Vda7R2fV/QU6vyEPWe7lu52JonBdy8CgOwBvVG4prDsgrmkhLD0xAFpVYb+2w6D/HqexuOSSJ6Gw2kQ9JTra6P9z1q79ZCZupDI/8WLmO1r6yY+FgQVVpyIODOzfQxV7cLayiyELNidRgV0b8D8mWhEx56fESB5BqJGc+Sfb9rpa+8ezRRCqIhMw2L5yMzLhnAzA1w7rCy8TQYeWxYkmFvZ/XNhLhkb75YGUlFukkChZEb5urxPYA3NYLE8ot1uyhMU/WIYiGyNdUG5sGnNU844kNhWsjtrH+AW/2KjkOLGeZNHCdSWhzWykDFDBar8i8nR8y8Pi1E0Bse2IcPdyMCP7vnMAxmeCkGgS+HweITFMvp98j0wp0ZigNhyKttOc1miuDFV94qz6cwcIEwS2VRm+3Gt6FK1rs48kO6HZmGpWhZKp+VrPu0+9d7BsakDjg9hBiLzJjFFkBXHNvKMAIk9+kjck14IANkePULSTjRgW9mVmm2lKoQqAulr7yJemEysuOD4sMMBYrbAjvwjDPLreOrFpbX1spr4jreSU3s+5+k7JTRsOnvbuoIx4yg8rjjNgVBShwCBCTwDjQtI1nCPgonJI9Fx4Ji382BjyrxF2kxDfvAwtCYyOjuC8tle3My6GN5+yiVSATKYAgFrI80P36M3v/HuKFkWFgWdvlAwHF5xnjduRMO2fcwxHICdyArb+WQBxEScveCtfvDq6kKjvtnzuCWSp/EQTcv9JSMD9sBI9n9ZFpWBBYGmQQey8gcBXnn+IiFjCisBpOuiuPkqIwBf6nEMM4M9Oz8xj3nPSBrg/eEa1xkBkh+erym/uOu6UgBTwfyEbN1jQPEUdgCSBRB5di5G7aHbXdhrjzaiO2MSyTOQaJov7pzwgN8beNJMXTadXfDoJANE1i9e4NvYa3Ndkk9bifzyjollPp8vNrBKBVl294g5MNiZtu5FJDNvRaGl78NDfjlPtbQF8vBdE2Z5uwPPazKBeWeDZ5yBx7JLxauZ9UGiHwLIr9dxHeL0BfLu6271dvk3hY+dSR486MrRADurSUgj84iZiUtLaQvk0VnXjcENuAYbbm7Z4Plh616ygqN4MAzObHoE5s8wHvq0BfLknIl5AUdWUi+n8wASRdMK86eAp17aAskGj1ghlvMsRR4jDnigtgc1ZTqETZsMc8umNZC4QrcbITBXcrCcMhIHCYwsWFVr6DxIayARArgSW6D5KUOJo2HEM107pML9phFpWgN5fO7U7+NYhi8VqRGncT63S9Kl/dfUfGRUPa2BZIP/+ME7agd2tE0yYiQVz+FN+hjRaFwBZGkPZGnN+ilD2lurLzlyiFz01WEyqON0KjCLafOzoeeQroyMiyb8tPwTng4tAOS6qzDIiOvGw1uayLmtzWTYqZPkrJYTJLfL8IabIRZ+RIccLRhEvhg8lHx6zghyrGAgMyTvLx9XErwXaVDSHsh5Wzd+T5SkT9X4ELG/ZkZ6pt9HhrSewM9J0q+jnWR7u4nL100yvd6e370KDSudGU7SjDRfJ/vlKT9NuQXkRG4eafk6d1p4Vw3l44qt7UYLcTNn28bhGT5J1fwQsdcWMsyfxRhJV/hzQQicvXzsj44Z1Ul7iWQMzK9Zp35tG5tvW3bS48ajMKN3YHr/vq8AyXYWqjEmYiZcZ1GZVIyYNvMcb3DNinHFhndtrCKR7FxVfQ4zpwbATFmhZG95YfHfG7VvDSC3rD9FZKoZw6dMb73MUkYoGGlkWS5YPn6argPFEkCWbdl4FAdcZ2nxK8A3KTLnboqKIMrjl4+Z5tFr3hpAbt24D3HnYZkFoljCgZctK4VKh9KF5YUluscelgBy/taNbxNJ0k0sJ2CdjE7flTQBpeQ5rJNzLC+R81/bUEMC8mRdRnAEISIfWioKIi7eWTGuRP9FpqLjZLdZ9tqm39BAQD+3BOaWiOmd3FPEICcwgU7DBNK9R2mJqQ0gHwWQS4xekIBDMXxQzYgsruey4Bi8cuzkJk2FF1erZ7hS6fZX5ghen7HzIIVKB9N7NKb3LksDWfb65huov/s1nvcn4sqHoHLPh6euHg2m9yxM799aGshFW9aNROjPQS4wWH5dZwp2OgL9ZfnYEs38FpZYI3G+LMyvXc8ZRYUbEMy9luydDqVrYUvOtrREssHDA6TpuIhmToAZ1Jsim0uMuYj+CN+kZhi0NSQSfJbWrvMhnQOfSkZUms3Fn1SEC0aEr8Ao18y5ax0ga9afRqSk8b23HlRC3nMukDiI2E2TFYXFmvtQ6wC5Zf0xQaZDOXhWSFLhyBB0vECWAbJs64b9uGONRCSchV27YzsdTnIeMrhGLl4+bso+Ndpk9sMzlrhpyrZs2IG73teaaUDEnUNcezZTRZcW03sCpned1YF8EUDeYQYVBiIDM1kF4Su3rxhbvN7aQG5/5T7q9UWkZeABKKlKR8cvaZ2pXee+Grcz36I992h4QEyB0nkMtuRDlpbIBfXV5yPz3AEZ32RQskHzlqQqHfosjmbvtzSQi+o251NRbGGpbuSu3i9tcsGZvCNb+gqAvNXSQLLBL6yvUkSRAckA5S5JOrKFK20HXGns+nRMscwayUa+wFN1DL4IlrmFyB1mPtEFm5J90yZBRwaAPAAgVW1ZawFZX/knhEJfqkilHzmEvJGZV/QkNDmODHoSU3uA9SWyvnI7gOz1wEhM8UQlZNICkzl7mdM30QKtrSp81pJIT9U6zM6ZvWAARAVMzpIMm9JG6PCnx5V8Gd2lpYCEslkJBiKC82XkSuO1LZPiyKDCleWFU//P2kB6Kv8DGuORcCYUxcNrWybjcEwUisrHTP2DpYEs81TNBRaro5kwY1smejgGzT0fmnuVtYFsqLxVpELERc8QQxJLBoJs0YYFERm2RCIyKF2Gs5t/tTiQ7nH4foJHDSxu2zLxKF83NHexxYGsvBgSuVdL6nhtS2jvJgTxx5edmpJmnN3E1LWU1i5rqB0kUn+j3vSVumAOhWX3UzWeMzPeRNI6rlwVqvVl+TwEnh4Kf2YpINnAQ/ttLTB5prjgcFSITvuPcbITV1AlNvyrEHURYYZZDsgF9VWNGLTutJSRyob2pLNRXU9t9p/ZXY7zAOR9hspJhQAvS5IF8fyKcVN7oz8sCGTlXmwTL9YDQJFKNsWRVEkVSIftbiQTeV+WqOFlTU3JJ2QjpHJG6LkFgazyYNCGt7FYVmcFTJUiO8UJqyfOqFvgqfwzPEKGNxZUXwbcy7KNDKu4tvgoe25FIDdg0FwfopDhHaLwEsUUu+07FTdOP7iwofJxZAJFZun4CuR9KaRS2WlZEchnMGhVd380HMHtI/yWUTO84ubbFb4X7Nh8uSCLXF8rVpVKSvbjePbvLAkktPajGLhh9G6IcUT6EjksYzTDdFUPkEEroBJTU9C8emIkq4FMaeCqq245YUWJXIhBLzdiMPy5xM54QkcTuKVZMXlmbzCWmkfJTNuyQG9bObbkZcsBWVZfdQcuJXJ/0p6BEmFbimJnxaQZvV/JWORxT0LC5Foz4EXQUvIkdjoPWg5IKIgboSC2mmW8d/soCqcrJs3svaFQ9mmtUzjiP4UteHzuc0q2AMjJlgNyUYP7HyFh75kFste2FIQTFTfNYOkBegvMIDfMoCKzbQbp6Zc4xxluOSDL6mqHiaI/xtXPAwL74AY+cnSsYtL0iA/rYrm4F8uF4UfdtPookHMdlgNyVl1dZp542sxZbCT/klRTPuGWKeF/XLxra3/Z7z3B8zLUaETR9l3LAckYwVRsw1SM80M26o5ZmEFIQCLoXpPTAlpGln9LAgmT5TMw9Z24JIiSB6EcYjKlwhnyMMBYGlebhM60KJDxSw+l8t0rCqf9LhqwRZ7qa6gga97s0gWY0lKLAlnFTvG4PmoWDYBm1C3u8kAqW7BkGH4EM6ZNQpdYE0hP5fM4lp0VzzQUZXL+svHFf1Gru6C+8iW46P7JbLs4WXzKkkAuaKj6Fe7cPGiWYUavFXISVGKb7xIE8QWz7bJMLNYEsr7yAUiOqdTaiulM6eEVhSXnagFVuvvVAfZuW7NZINHwWosCWXUPBr7WLMOQnHr4Dwv16iF0cA+2izHfoNBXNmSTJYGM19EAifwfSOS/6AJZX/kkpP0Bky/JbUkgF3rcV+DLTe+YZJaFnv8Ujtgn9OqV1VffIBKZ6254qB0om9ctCWTpmzUj7IHAIfNA0lsgkZt1gYzDG8RCoi0J5OJdG12y3xn87qmJoncFLrwZmEE1mN66WV3C6VkWFksCyZjA3hhub4H7WheY9ePWFvuYg+HdkoWeygWgK+d+R5S8a1kgsQv5HIMfboZZ7LGv4KEv3fHqBXbZxpUSNmhWkbctDGQlpEDg+rJHjw1pqLEjpzf/iwKQOy0L5EJPVS0Ok7mzQeNC5lxMbe67jGj/12hf11Tq1dr4yJqVgfwdGL2TZ6oqNCK9unxMyW5e+oUN7h9hzr7MQ4/1t9ayQGKNXI7BL+RhlEWXFMh5zqXjx3OE9AZbnPPutrzMjs4W9GGIEQz9zYZEfAM981Rw7rIgARYsYFw4s5JGN4Q+duJvhnGUMAPgNbJoWVDvnoNkIcZpvoKaRjdnjxYEsCd/AYX2mDFE9FnrAumpnAYn7KvGTCrRffNWFhY/w0MbTjO/ruoHyHwTc6dGpR22zFizmDkakEVx1MoxReY/ngGvOab3SRjnut/UgfnzqGWBZBfhBSIf4BCDNjhzNRMdG9WHWy3y2p5KBQD5E8sCGboIbwQEM01wwSiu8x3WNk/wALT2vZYFkjEJE0g2Nk/ozxBS8isjwLWeL95VfY7slw/r1ZcpnWppILH7+ApW3hA9JhEBfUXF+OK4g0mVF+ap2gevuWbWaYGKP7Q0kDBPei/Cq4OpfVHdjITC0wRPkLBAqw47mbQ6kBEX4WMYpWQdPD6mj1ej28ELQ9ieUKMFpOx05FkcyKoXwYB2dipK5gDI58xInxrtnHers1wdsurXh/5UuYXULVuTYLaMREeYYP0yJFU68sGHO869/PuqCdCoKIxYMWbqFwl2o1Qva3CPq396zZYRV17mOvn5l+Ton/eRYx/tx8fR29jj8ZaWSDAwCz/PZ+b2I0MvuZDkDzubOHOyCfuIec6g/o97lv+aO2ifA2ylLw262VYGciSY+gA/WruOR/BsKQdAPCSsD3ZdTrMvqwJZCKbYaaDe1i1ZQLLPQrO+2IvTKuVWA5IxxXyQbJoZlXoQMMDjLab6SncgmRSw8BEGSImBVEQDZhbIhPpKRyDZdGWJ080CFw+QSesrHYH0ABHD268c83UxaIxuiFWCJiY/BUfb0SSWWyPj4PHMVPkr645VZxCmB4EAAAAASUVORK5CYII=",
     "eligibility": "Good CIBIL; fuel spenders",
     "notes": "Check campaign status weekly",
     "offer_snippet": "Apply for BPCL Octane SBI Card - Online Application | SBI Card",
-    "last_checked_ts": 1759116440
+    "last_checked_ts": 1759720523
   },
   {
     "name": "ICICI Bank Credit Cards",
@@ -92,11 +92,10 @@
     "offers": [
       "Deposits Back Deposits Close Fixed Deposit Recurring Deposit iWish - Goal Based Savings VIEW ALL DEPOSITS Fixed Deposit Interest Rates Fixed Deposit Calculator Dream it, achieve it! FDs offer stable returns for your dreams. OPEN FD",
       "FDs offer stable returns for your dreams.",
-      "Deposits Back Deposits Close Fixed Deposit Recurring Deposit Foreign Currency & RFC FD VIEW ALL DEPOSITS Fixed Deposit Interest Rates Fixed Deposit Calculator Dream it, achieve it! FDs offers Upto 7.2%* returns OPEN FD",
       "FDs offers Upto 7.2%* returns",
       "RBI: Beware of Fictitious Offers"
     ],
-    "last_checked_ts": 1759116447
+    "last_checked_ts": 1759720529
   },
   {
     "name": "Axis Bank Credit Cards",
@@ -125,7 +124,7 @@
     "eligibility": "NTB preferred; income docs",
     "notes": "Some campaigns rotate; check payout",
     "offer_snippet": "Attention Required! | Cloudflare",
-    "last_checked_ts": 1759116451
+    "last_checked_ts": 1759720534
   },
   {
     "name": "IndusInd Bank Credit Cards",
@@ -154,7 +153,7 @@
     "eligibility": "CIBIL 700+ recommended",
     "notes": "",
     "offer_snippet": "Referral Code Link",
-    "last_checked_ts": 1759116459
+    "last_checked_ts": 1759720542
   },
   {
     "name": "YES Bank Credit Cards",
@@ -176,8 +175,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/4742/thumb/New_Project_%2837%29.png?1670959593",
     "eligibility": "As per campaign",
     "notes": "No public official program",
-    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | September 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Chec",
-    "last_checked_ts": 1759116465
+    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | October 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check ",
+    "last_checked_ts": 1759720548
   },
   {
     "name": "IDFC FIRST Bank Credit Cards",
@@ -210,7 +209,7 @@
       "We just need few more details to unlock your offer These details will help us to enhance our offer and provide the best offer, personalized for you",
       "We just need few more details to unlock your offer"
     ],
-    "last_checked_ts": 1759116472
+    "last_checked_ts": 1759720553
   },
   {
     "name": "HSBC India Credit Cards",
@@ -236,7 +235,7 @@
     "offers": [
       "NIL Joining & Annual Fees"
     ],
-    "last_checked_ts": 1759116479
+    "last_checked_ts": 1759720561
   },
   {
     "name": "Bajaj Finserv (Cards/Loans)",
@@ -260,7 +259,7 @@
     "eligibility": "",
     "notes": "",
     "offer_snippet": "Follow Us",
-    "last_checked_ts": 1759116484
+    "last_checked_ts": 1759720567
   },
   {
     "name": "RBL Bank – IndianOil Credit Card",
@@ -293,7 +292,7 @@
       "Save your Card on Merchants",
       "NRI Deposits NRE Deposits NRO Deposits FCNR(B) Deposits Yield Maximiser NRO Tax Saver Fixed Deposits"
     ],
-    "last_checked_ts": 1759116497
+    "last_checked_ts": 1759720575
   },
   {
     "name": "AU Small Finance Bank Credit Card",
@@ -316,7 +315,7 @@
     "eligibility": "NTB; KYC online",
     "notes": "",
     "offer_snippet": "Attention Required! | Cloudflare",
-    "last_checked_ts": 1759116503
+    "last_checked_ts": 1759720580
   },
   {
     "name": "Jupiter Money (App)",
@@ -339,7 +338,7 @@
     "image": "https://www.google.com/s2/favicons?domain=app.appsflyer.com&sz=128",
     "eligibility": "KYC; PAN/Aadhaar",
     "notes": "",
-    "last_checked_ts": 1759116508
+    "last_checked_ts": 1759720585
   },
   {
     "name": "Kiwi (Credit on UPI)",
@@ -366,7 +365,7 @@
       "Get 5% Cashback",
       "Free airport lounge access"
     ],
-    "last_checked_ts": 1759116513
+    "last_checked_ts": 1759720590
   },
   {
     "name": "Scapia Credit Card",
@@ -389,7 +388,7 @@
     "eligibility": "Travel rewards focus",
     "notes": "",
     "offer_snippet": "Scapia — Check your eligibility to apply for the Scapia Federal Credit Card",
-    "last_checked_ts": 1759116518
+    "last_checked_ts": 1759720595
   },
   {
     "name": "Kotak 811 Savings Account",
@@ -423,9 +422,10 @@
       "\"Wow! Loving the Kotak811 zero balance account. They offer free & fast fund transfer option as well\"",
       "Looking for a hassle-free way to save and manage your money? Open Kotak811 zero balance savings account gives you the flexibility to bank on your terms. Here are a host of benefits you can enjoy:",
       "1. Experience zero balance freedom: Save at your pace with no minimum balance requirement—no penalties, just convenience.",
+      "*811 Super customers can avail flat 5% cashback up to Rs.500 p.m. on Debit Card spends | 811 Super fees & Charges",
       "*Rewards and Cashback Terms and Conditions"
     ],
-    "last_checked_ts": 1759116524
+    "last_checked_ts": 1759720601
   },
   {
     "name": "YES Bank (Campaign Listing)",
@@ -447,8 +447,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/4742/thumb/New_Project_%2837%29.png?1670959593",
     "eligibility": "",
     "notes": "Duplicate listing consolidated",
-    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | September 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Chec",
-    "last_checked_ts": 1759116529
+    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | October 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check ",
+    "last_checked_ts": 1759720606
   },
   {
     "name": "Standard Chartered Credit Cards",
@@ -470,8 +470,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/2067/thumb/Standard.png?1490896572",
     "eligibility": "High-income metros",
     "notes": "Campaign often pauses; check alternates",
-    "offer_snippet": "Standard Chartered Affiliate Program with Payout ₹ 2520.00 / Lead | September 2025 — Join our Standard Chartered Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check St",
-    "last_checked_ts": 1759116534
+    "offer_snippet": "Standard Chartered Affiliate Program with Payout ₹ 2520.00 / Lead | October 2025 — Join our Standard Chartered Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Stan",
+    "last_checked_ts": 1759720611
   },
   {
     "name": "Bank of Baroda Credit Cards",
@@ -493,8 +493,8 @@
     "image": "https://www.cuelinks.com/photos/thumb/missing.png",
     "eligibility": "",
     "notes": "",
-    "offer_snippet": "Bank of Baroda Credit Card Affiliate Program with Payout ₹ 850.50 / Lead | September 2025 — Join our Bank of Baroda Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CP",
-    "last_checked_ts": 1759116540
+    "offer_snippet": "Bank of Baroda Credit Card Affiliate Program with Payout ₹ 850.50 / Lead | October 2025 — Join our Bank of Baroda Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL ",
+    "last_checked_ts": 1759720617
   },
   {
     "name": "Federal Bank (Affiliate)",
@@ -515,8 +515,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/4230/thumb/New_Project_-_2021-10-22T143212.400_%281%29.png?1634913322",
     "eligibility": "",
     "notes": "",
-    "offer_snippet": "Federal Bank Affiliate Program with Payout ₹ 1190.70 / Lead | September 2025 — Join our Federal Bank Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Federal Bank a",
-    "last_checked_ts": 1759116545
+    "offer_snippet": "Federal Bank Affiliate Program with Payout ₹ 1190.70 / Lead | October 2025 — Join our Federal Bank Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Federal Bank aff",
+    "last_checked_ts": 1759720622
   },
   {
     "name": "PNB MetLife (PNB)",
@@ -537,11 +537,11 @@
     "image": "https://cdn0.cuelinks.com/merchant/3080/thumb/pnb.png?1515177684",
     "eligibility": "",
     "notes": "",
-    "offer_snippet": "PNB Metlife Affiliate Program with Payout ₹ 121.50 / Lead | September 2025 — Join our PNB Metlife Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check PNB Metlife affil",
+    "offer_snippet": "PNB Metlife Affiliate Program with Payout ₹ 121.50 / Lead | October 2025 — Join our PNB Metlife Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check PNB Metlife affilia",
     "offers": [
       "We need to maintain a sale conversion rate of 1 % on the leads you achieve. If you cannot achieve this, then the billing will be done on a pro-rata basis."
     ],
-    "last_checked_ts": 1759116551
+    "last_checked_ts": 1759720627
   },
   {
     "name": "Canara Bank (Seasonal Campaigns)",
@@ -562,7 +562,7 @@
     "image": "",
     "eligibility": "",
     "notes": "Campaigns run during promo periods; add when active",
-    "last_checked_ts": 1759116551
+    "last_checked_ts": 1759720627
   },
   {
     "name": "Aditya Birla Finance",
@@ -585,8 +585,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/5258/thumb/aditya-birla-group-logo.png?1695050136",
     "eligibility": "",
     "notes": "",
-    "offer_snippet": "Aditya Birla Affiliate Program with Payout ₹ 270.00 / Lead | September 2025 — Join our Aditya Birla Affiliate Program for affiliate earnings. Select from payout types like CPS, CPI, or CPL, and explore detailed category-",
-    "last_checked_ts": 1759116556
+    "offer_snippet": "Aditya Birla Affiliate Program with Payout ₹ 270.00 / Lead | October 2025 — Join our Aditya Birla Affiliate Program for affiliate earnings. Select from payout types like CPS, CPI, or CPL, and explore detailed category-wi",
+    "last_checked_ts": 1759720633
   },
   {
     "name": "Mahindra Finance",
@@ -608,8 +608,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/3389/thumb/Mahindra-Finance.png?1552993964",
     "eligibility": "",
     "notes": "",
-    "offer_snippet": "Mahindra Finance Affiliate Program with Payout ₹ 2.70 / Lead | September 2025 — Join our Mahindra Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Mahindra ",
-    "last_checked_ts": 1759116561
+    "offer_snippet": "Mahindra Finance Affiliate Program with Payout ₹ 2.70 / Lead | October 2025 — Join our Mahindra Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Mahindra Fi",
+    "last_checked_ts": 1759720638
   },
   {
     "name": "Muthoot Finance",
@@ -631,8 +631,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/2641/thumb/Muthootfinance.png?1489686470",
     "eligibility": "",
     "notes": "",
-    "offer_snippet": "Muthoot Finance Affiliate Program with Payout ₹ 112.50 / Lead | September 2025 — Join our Muthoot Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Muthoot F",
-    "last_checked_ts": 1759116567
+    "offer_snippet": "Muthoot Finance Affiliate Program with Payout ₹ 112.50 / Lead | October 2025 — Join our Muthoot Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Muthoot Fin",
+    "last_checked_ts": 1759720643
   },
   {
     "name": "Shriram Finance",
@@ -655,7 +655,7 @@
     "image": "",
     "eligibility": "",
     "notes": "Add campaign link when live",
-    "last_checked_ts": 1759116567
+    "last_checked_ts": 1759720643
   },
   {
     "name": "Money View",
@@ -677,8 +677,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/5236/thumb/New_Project_-_2023-09-14T172103.272.png?1694712111",
     "eligibility": "",
     "notes": "",
-    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | September 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affi",
-    "last_checked_ts": 1759116572
+    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | October 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affili",
+    "last_checked_ts": 1759720649
   },
   {
     "name": "FatakPay",
@@ -700,8 +700,8 @@
     "image": "https://cdn0.cuelinks.com/merchant/7167/thumb/download_%284%29.png?1722514443",
     "eligibility": "",
     "notes": "",
-    "offer_snippet": "FatakPay (CPA) Affiliate Program with Payout ₹ 72.00 / Acquisition | September 2025 — Join our FatakPay Affiliate Program for affiliate earnings. Select from payout types like CPS, CPI, or CPL, and explore detailed categ",
-    "last_checked_ts": 1759116578
+    "offer_snippet": "FatakPay (CPA) Affiliate Program with Payout ₹ 72.00 / Acquisition | October 2025 — Join our FatakPay Affiliate Program for affiliate earnings. Select from payout types like CPS, CPI, or CPL, and explore detailed categor",
+    "last_checked_ts": 1759720654
   },
   {
     "name": "Bharat Loan / Devmuni Leasing",
@@ -723,7 +723,7 @@
     "image": "",
     "eligibility": "",
     "notes": "Add campaign link when live",
-    "last_checked_ts": 1759116578
+    "last_checked_ts": 1759720654
   },
   {
     "name": "Paytm Money",
@@ -745,7 +745,7 @@
     "image": "",
     "eligibility": "",
     "notes": "Add campaign link when live",
-    "last_checked_ts": 1759116578
+    "last_checked_ts": 1759720654
   },
   {
     "name": "Zerodha",
@@ -772,7 +772,7 @@
     "image": "",
     "eligibility": "",
     "notes": "Brokerage referral varies by time; add when available",
-    "last_checked_ts": 1759116578
+    "last_checked_ts": 1759720654
   },
   {
     "name": "Tata Capital / Tata Neu (Finance)",
@@ -795,7 +795,7 @@
     "image": "",
     "eligibility": "",
     "notes": "Add campaign link when live",
-    "last_checked_ts": 1759116578
+    "last_checked_ts": 1759720654
   },
   {
     "name": "NeoGrowth / Capital First (IDFC legacy)",
@@ -818,6 +818,6 @@
     "image": "",
     "eligibility": "",
     "notes": "Partner via GroMo or direct when available",
-    "last_checked_ts": 1759116578
+    "last_checked_ts": 1759720654
   }
 ]
