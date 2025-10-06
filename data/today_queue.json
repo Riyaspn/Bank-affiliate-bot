@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "id": "99630b23a3d3bcb27e3a076739b7d951",
+    "name": "IDFC FIRST Bank Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Apply – Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.idfcfirstbank.com%2Fcredit-card%2Fntb-diy%2Fapply"
+      }
+    ],
+    "tags": [
+      "idfc",
+      "lifetime_free"
+    ],
+    "image": "https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/etb/pre-approved/1500.jpg",
+    "offer_snippet": "Credit Card Application - Apply for Credit Card — Credit Card Application - Super saver interest rates with 10 times rewards on monthly spends. Life time free credit card with best customer reviews. Apply now!",
+    "offers": [
+      "Low interest rates starting from 8.5% p.a.",
+      "Upto 10X rewards 10X rewards on your birthday, and crossing the spend threshold, on certain variants",
+      "Lifetime FREE Credit Card",
+      "*For more details & exclusions on reward points, please visit our website",
+      "I expected better features and rewards",
+      "We regret to inform you that we are currently unable to process your application in accordance with our internal policies. Rest assured, we're working towards bringing a suitable offer for you soon.",
+      "We just need few more details to unlock your offer These details will help us to enhance our offer and provide the best offer, personalized for you",
+      "We just need few more details to unlock your offer"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "8488ab929995ad380cf063af4ef4bf43",
+    "name": "Kotak 811 Savings Account",
+    "product_type": "savings_account",
+    "links": [
+      {
+        "type": "official",
+        "label": "Open 811 Account",
+        "url": "https://www.kotak811.com/open-zero-balance-savings-account"
+      },
+      {
+        "type": "network",
+        "label": "Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.kotak811.com%2Fopen-zero-balance-savings-account"
+      }
+    ],
+    "tags": [
+      "zero_balance",
+      "digital_kyc"
+    ],
+    "image": "https://www.kotak811.int/images/social-share.png",
+    "offer_snippet": "Open Zero Balance Savings Account Online in 3 Minutes | Kotak 811 | Kotak Mahindra Bank — Open Kotak 811 Zero Balance Savings Account online in 3 mins & enjoy 5.75% interest p.a. with ActivMoney. Get up to ₹6,000 cashbac",
+    "offers": [
+      "Up to ₹250* cashback on UPI payments",
+      "Earn up to 5.75% Interest p.a. with ActivMoney^",
+      "\"Wow! Loving the Kotak811 zero balance account. They offer free & fast fund transfer option as well\"",
+      "Looking for a hassle-free way to save and manage your money? Open Kotak811 zero balance savings account gives you the flexibility to bank on your terms. Here are a host of benefits you can enjoy:",
+      "1. Experience zero balance freedom: Save at your pace with no minimum balance requirement—no penalties, just convenience.",
+      "*Rewards and Cashback Terms and Conditions"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "1a21aa49c719d1721b3cdbe8610931eb",
+    "name": "Money View",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmoneyview-affiliate-program"
+      }
+    ],
+    "tags": [
+      "personal_loan",
+      "fintech"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/5236/thumb/New_Project_-_2023-09-14T172103.272.png?1694712111",
+    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | September 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affi",
+    "offers": [],
+    "status": "active"
+  }
+]
