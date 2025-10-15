@@ -782,5 +782,9 @@
   {
     "name": "HSBC India Credit Cards",
     "ts": 1760467256
+  },
+  {
+    "name": "ICICI Bank Credit Cards",
+    "ts": 1760510610
   }
 ]
