@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "2c9d3eaed58d008812c541dd6ba241d1",
+    "name": "ICICI Bank Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "official",
+        "label": "ICICI Referral Page",
+        "url": "https://www.icicibank.com/personal-banking/card/credit-card/referral-program"
+      },
+      {
+        "type": "network",
+        "label": "Network Redirect",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.icicibank.com%2Fpersonal-banking%2Fcard%2Fcredit-card%2Freferral-program"
+      }
+    ],
+    "tags": [
+      "rewards",
+      "travel",
+      "cashback"
+    ],
+    "image": "https://www.icicibank.com/content/dam/icicibank-revamp/images/icici-logo/icici%20header%20logo.png",
+    "offer_snippet": "Page not found",
+    "offers": [
+      "Deposits Back Deposits Close Fixed Deposit Recurring Deposit iWish - Goal Based Savings VIEW ALL DEPOSITS Fixed Deposit Interest Rates Fixed Deposit Calculator Dream it, achieve it! FDs offer stable returns for your dreams. OPEN FD",
+      "FDs offer stable returns for your dreams.",
+      "FDs offers Upto 7.2%* returns",
+      "RBI: Beware of Fictitious Offers"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "1a21aa49c719d1721b3cdbe8610931eb",
+    "name": "Money View",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmoneyview-affiliate-program"
+      }
+    ],
+    "tags": [
+      "personal_loan",
+      "fintech"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/5236/thumb/New_Project_-_2023-09-14T172103.272.png?1694712111",
+    "offer_snippet": "Moneyview Affiliate Program with Payout ₹ 436.50 / Acquisition | October 2025 — Join our Moneyview Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Moneyview affili",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "a515eb32b5a3e01c510cc4a2164a7dc2",
+    "name": "Federal Bank (Affiliate)",
+    "product_type": "other",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffederal-bank-affiliate-program"
+      }
+    ],
+    "tags": [
+      "federal"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/4230/thumb/New_Project_-_2021-10-22T143212.400_%281%29.png?1634913322",
+    "offer_snippet": "Federal Bank Affiliate Program with Payout ₹ 1190.70 / Lead | October 2025 — Join our Federal Bank Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Federal Bank aff",
+    "offers": [],
+    "status": "active"
+  }
+]
