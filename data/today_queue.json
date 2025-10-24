@@ -1,36 +1,5 @@
 [
   {
-    "id": "2c9d3eaed58d008812c541dd6ba241d1",
-    "name": "ICICI Bank Credit Cards",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "official",
-        "label": "ICICI Referral Page",
-        "url": "https://www.icicibank.com/personal-banking/card/credit-card/referral-program"
-      },
-      {
-        "type": "network",
-        "label": "Network Redirect",
-        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.icicibank.com%2Fpersonal-banking%2Fcard%2Fcredit-card%2Freferral-program"
-      }
-    ],
-    "tags": [
-      "rewards",
-      "travel",
-      "cashback"
-    ],
-    "image": "https://www.icicibank.com/content/dam/icicibank-revamp/images/icici-logo/icici%20header%20logo.png",
-    "offer_snippet": "Page not found",
-    "offers": [
-      "Deposits Back Deposits Close Fixed Deposit Recurring Deposit iWish - Goal Based Savings VIEW ALL DEPOSITS Fixed Deposit Interest Rates Fixed Deposit Calculator Dream it, achieve it! FDs offer stable returns for your dreams. OPEN FD",
-      "FDs offer stable returns for your dreams.",
-      "FDs offers Upto 7.2%* returns",
-      "RBI: Beware of Fictitious Offers"
-    ],
-    "status": "active"
-  },
-  {
     "id": "256d11ee8f4d0852958b51a394d2a819",
     "name": "Mahindra Finance",
     "product_type": "loan",
