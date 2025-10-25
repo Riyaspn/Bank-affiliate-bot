@@ -1,34 +1,5 @@
 [
   {
-    "id": "be949c6d0fc6509dacc9df81d5cf0fd3",
-    "name": "RBL Bank – IndianOil Credit Card",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "network",
-        "label": "Product Page – Redirect",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.rblbank.com%2Findianoil-rbl-bank-credit-card"
-      }
-    ],
-    "tags": [
-      "fuel",
-      "rbl"
-    ],
-    "image": "https://drws17a9qx558.cloudfront.net/document/images/webp/go-account-zero-balance-online-savings-mb.webp",
-    "offer_snippet": "IndianOil RBL Bank Credit Card | RBL Bank",
-    "offers": [
-      "NRI Deposits Top 3 Products NRE Deposits NRO Deposits FCNR(B) Deposits Yield Maximiser NRO Tax Saver Fixed Deposits",
-      "NRO Tax Saver Fixed Deposits",
-      "Credit Card Offers Top 3 Products Flights, Hotels & Travel Lifestyle Electronics EMI Offers Exclusive Facilities Others",
-      "Debit Card Offers Top 3 Products Accessories Flights, Hotels & Travel Lifestyle Food Delivery & Dining Health & Welleness",
-      "Credit Cards Set Your Credit Card PIN Online Card Payment Online Card Account Card Settings Redeem Reward Points Card Activation Save your Card on Merchants",
-      "Redeem Reward Points",
-      "Save your Card on Merchants",
-      "NRI Deposits NRE Deposits NRO Deposits FCNR(B) Deposits Yield Maximiser NRO Tax Saver Fixed Deposits"
-    ],
-    "status": "active"
-  },
-  {
     "id": "e51513f31f18471a88f3686487a053ba",
     "name": "Kiwi (Credit on UPI)",
     "product_type": "fintech_app",
