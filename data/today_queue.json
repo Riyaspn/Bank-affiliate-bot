@@ -1,34 +1,5 @@
 [
   {
-    "id": "99630b23a3d3bcb27e3a076739b7d951",
-    "name": "IDFC FIRST Bank Credit Cards",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "network",
-        "label": "Apply – Network Redirect",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.idfcfirstbank.com%2Fcredit-card%2Fntb-diy%2Fapply"
-      }
-    ],
-    "tags": [
-      "idfc",
-      "lifetime_free"
-    ],
-    "image": "https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/etb/pre-approved/1500.jpg",
-    "offer_snippet": "Credit Card Application - Apply for Credit Card — Credit Card Application - Super saver interest rates with 10 times rewards on monthly spends. Life time free credit card with best customer reviews. Apply now!",
-    "offers": [
-      "Low interest rates starting from 8.5% p.a.",
-      "Upto 10X rewards 10X rewards on your birthday, and crossing the spend threshold, on certain variants",
-      "Lifetime FREE Credit Card",
-      "*For more details & exclusions on reward points, please visit our website",
-      "I expected better features and rewards",
-      "We regret to inform you that we are currently unable to process your application in accordance with our internal policies. Rest assured, we're working towards bringing a suitable offer for you soon.",
-      "We just need few more details to unlock your offer These details will help us to enhance our offer and provide the best offer, personalized for you",
-      "We just need few more details to unlock your offer"
-    ],
-    "status": "active"
-  },
-  {
     "id": "8488ab929995ad380cf063af4ef4bf43",
     "name": "Kotak 811 Savings Account",
     "product_type": "savings_account",
