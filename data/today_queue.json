@@ -1,40 +1,5 @@
 [
   {
-    "id": "8c2c32ded0fc53e3ca5ffce7b7ce7828",
-    "name": "HDFC Bank Credit Cards",
-    "product_type": "credit_card",
-    "links": [
-      {
-        "type": "official",
-        "label": "Referral Portal",
-        "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/credit-card-services/credit-card-referral-program"
-      },
-      {
-        "type": "official",
-        "label": "HDFC Tracked Link",
-        "url": "https://hdfcbk.io/HDFCBK/K/DUvfZqS14o8"
-      }
-    ],
-    "tags": [
-      "cashback",
-      "rewards",
-      "bank"
-    ],
-    "image": "https://www.hdfcbank.com/content/api/contentstream/723fb80a-2dde-42a3-9793-7ae1be57c87f/SEO/hdfc.png",
-    "offer_snippet": "Credit Card Referral Program - Refer and Earn | HDFC Bank — Refer HDFC Bank Credit Cards and earn vouchers worth ₹250 for each successful referral. Share with friends and enjoy rewards with HDFC's Credit Card Referral Pr",
-    "offers": [
-      "Religious Offering's & Donation",
-      "OFFERS Offers, Discounts Smartbuy Compare & Fly Compare & Shop Deals & Offers SmartBuy Hotels Dining Offers OFFERS FOR YOU",
-      "Smartbuy Compare & Fly Compare & Shop Deals & Offers SmartBuy Hotels Dining Offers",
-      "Smartbuy Compare & Fly Compare & Shop Deals & Offers SmartBuy Hotels Dining Offers OFFERS FOR YOU",
-      "Reward for Both: After one financial transaction of the referred Credit Card, both the referrer, i.e., you and the referee receive a ₹250 voucher each.",
-      "The referrer and referee will be rewarded only if the referee's Credit Card application is submitted after the referrer has entered the referee’s name and mobile number on the referral portal.",
-      "This offer is not applicable to physical Credit Card applications.",
-      "HDFC Bank employees are not eligible for the referral voucher, and the referrer and referee will not be rewarded if the referee already holds an HDFC Bank Credit Card."
-    ],
-    "status": "active"
-  },
-  {
     "id": "abb1d3988ff04811cd9e539a4881f623",
     "name": "Jupiter Money (App)",
     "product_type": "fintech_app",
