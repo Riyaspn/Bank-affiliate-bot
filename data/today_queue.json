@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "15691be3c1581ffa5a13a08e682c9cce",
+    "name": "Scapia Credit Card",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Apply – Scapia",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.scapia.cards%2Flanding_page"
+      }
+    ],
+    "tags": [
+      "travel",
+      "fintech"
+    ],
+    "image": "https://res.cloudinary.com/scapiacards/image/upload/q_85/v1756270677/spitha_prod_uploads/2025_08/default_image_1756270676030.webp",
+    "offer_snippet": "Scapia — Check your eligibility to apply for the Scapia Federal Credit Card",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "649ed2f65ae60d58cfc34ab1071730cf",
+    "name": "Muthoot Finance",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmuthoot-finance-affiliate-program"
+      }
+    ],
+    "tags": [
+      "gold_loan",
+      "nbfc"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/2641/thumb/Muthootfinance.png?1489686470",
+    "offer_snippet": "Muthoot Finance Affiliate Program with Payout ₹ 112.50 / Lead | November 2025 — Join our Muthoot Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Muthoot Fi",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "32582a484702a838c567cea680c19a4e",
+    "name": "YES Bank Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://www.cuelinks.com/campaigns/yes-bank-credit-card-affiliate-program"
+      }
+    ],
+    "tags": [
+      "yes",
+      "network-only"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/4742/thumb/New_Project_%2837%29.png?1670959593",
+    "offer_snippet": "Yes Bank Credit Card Affiliate Program with Payout ₹ 1197.00 / Lead | November 2025 — Join our Yes Bank Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check",
+    "offers": [],
+    "status": "active"
+  }
+]
