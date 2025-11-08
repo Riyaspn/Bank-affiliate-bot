@@ -1,28 +1,5 @@
 [
   {
-    "id": "e51513f31f18471a88f3686487a053ba",
-    "name": "Kiwi (Credit on UPI)",
-    "product_type": "fintech_app",
-    "links": [
-      {
-        "type": "network",
-        "label": "Apply – Kiwi",
-        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.gokiwi.in%2F"
-      }
-    ],
-    "tags": [
-      "credit_on_upi",
-      "fintech"
-    ],
-    "image": "https://apply.gokiwi.in/og-gokiwi.png",
-    "offer_snippet": "Kiwi: Your Virtual UPI Rupay Credit Card — With Kiwi, make credit card payments through UPI anywhere & everywhere",
-    "offers": [
-      "Get 5% Cashback",
-      "Free airport lounge access"
-    ],
-    "status": "active"
-  },
-  {
     "id": "ffcc5bab4d82feb1c68022dffc4106c6",
     "name": "Bajaj Finserv (Cards/Loans)",
     "product_type": "other",
