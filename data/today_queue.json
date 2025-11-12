@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "id": "4062e8cdd1d004bf5dca3f83100728ab",
+    "name": "IndusInd Bank Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "official",
+        "label": "Referral Link Generator",
+        "url": "https://myaccount.indusind.com/savingsaccount/ReferralCodelink.aspx"
+      },
+      {
+        "type": "network",
+        "label": "Apply – Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Finduseasycredit.indusind.com%2Fcustomer%2Fcredit-card%2Flead"
+      }
+    ],
+    "tags": [
+      "indusind",
+      "cashback",
+      "lifestyle"
+    ],
+    "image": "https://myaccount.indusind.bank.in/savingsaccount/images/indusInd-logo.png",
+    "offer_snippet": "Referral Code Link",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "256d11ee8f4d0852958b51a394d2a819",
+    "name": "Mahindra Finance",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmahindra-finance-affiliate-program"
+      }
+    ],
+    "tags": [
+      "vehicle_loan",
+      "nbfc"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/3389/thumb/Mahindra-Finance.png?1552993964",
+    "offer_snippet": "Mahindra Finance Affiliate Program with Payout ₹ 2.70 / Lead | November 2025 — Join our Mahindra Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Mahindra F",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "be949c6d0fc6509dacc9df81d5cf0fd3",
+    "name": "RBL Bank – IndianOil Credit Card",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Product Page – Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.rblbank.com%2Findianoil-rbl-bank-credit-card"
+      }
+    ],
+    "tags": [
+      "fuel",
+      "rbl"
+    ],
+    "image": "https://webassets.rbl.bank.in/document/images/webp/go-account-zero-balance-online-savings-mb.webp",
+    "offer_snippet": "IndianOil RBL Bank Credit Card | RBL Bank",
+    "offers": [
+      "NRI Deposits Top 3 Products NRE Deposits NRO Deposits FCNR(B) Deposits Yield Maximiser NRO Tax Saver Fixed Deposits",
+      "NRO Tax Saver Fixed Deposits",
+      "Credit Card Offers Top 3 Products Flights, Hotels & Travel Lifestyle Electronics EMI Offers Exclusive Facilities Others",
+      "Debit Card Offers Top 3 Products Accessories Flights, Hotels & Travel Lifestyle Food Delivery & Dining Health & Welleness",
+      "Credit Cards Set Your Credit Card PIN Online Card Payment Online Card Account Card Settings Redeem Reward Points Card Activation Save your Card on Merchants",
+      "Redeem Reward Points",
+      "Save your Card on Merchants",
+      "NRI Deposits NRE Deposits NRO Deposits FCNR(B) Deposits Yield Maximiser NRO Tax Saver Fixed Deposits"
+    ],
+    "status": "active"
+  }
+]
