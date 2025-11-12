@@ -1,25 +1,5 @@
 [
   {
-    "id": "256d11ee8f4d0852958b51a394d2a819",
-    "name": "Mahindra Finance",
-    "product_type": "loan",
-    "links": [
-      {
-        "type": "network",
-        "label": "Cuelinks Campaign",
-        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmahindra-finance-affiliate-program"
-      }
-    ],
-    "tags": [
-      "vehicle_loan",
-      "nbfc"
-    ],
-    "image": "https://cdn0.cuelinks.com/merchant/3389/thumb/Mahindra-Finance.png?1552993964",
-    "offer_snippet": "Mahindra Finance Affiliate Program with Payout ₹ 2.70 / Lead | November 2025 — Join our Mahindra Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Mahindra F",
-    "offers": [],
-    "status": "active"
-  },
-  {
     "id": "be949c6d0fc6509dacc9df81d5cf0fd3",
     "name": "RBL Bank – IndianOil Credit Card",
     "product_type": "credit_card",
