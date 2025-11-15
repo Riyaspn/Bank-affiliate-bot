@@ -1150,5 +1150,9 @@
   {
     "name": "HDFC Bank Credit Cards",
     "ts": 1763188889
+  },
+  {
+    "name": "Kiwi (Credit on UPI)",
+    "ts": 1763211181
   }
 ]
