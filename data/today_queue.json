@@ -1,1 +1,64 @@
-[]
+[
+  {
+    "id": "8b6d84670a894bd50ef4080c66fa506f",
+    "name": "SBI Card – BPCL Octane",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fwww.sbicard.com%2Fsprint%2Fbpcl-octane"
+      }
+    ],
+    "tags": [
+      "fuel",
+      "cashback",
+      "sbi"
+    ],
+    "image": "data:image/png;base64,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",
+    "offer_snippet": "SBI Card Sprint",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "435921481269f6b6eba7eb37800e5436",
+    "name": "FatakPay",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffatakpay-affiliate-program"
+      }
+    ],
+    "tags": [
+      "instant_loan",
+      "app"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/7167/thumb/download_%284%29.png?1722514443",
+    "offer_snippet": "FatakPay (CPA) Affiliate Program with Payout ₹ 63.00 / Acquisition | November 2025 — Join our FatakPay Affiliate Program for affiliate earnings. Select from payout types like CPS, CPI, or CPL, and explore detailed catego",
+    "offers": [
+      "Incentive / cashback"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "a515eb32b5a3e01c510cc4a2164a7dc2",
+    "name": "Federal Bank (Affiliate)",
+    "product_type": "other",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Ffederal-bank-affiliate-program"
+      }
+    ],
+    "tags": [
+      "federal"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/4230/thumb/New_Project_-_2021-10-22T143212.400_%281%29.png?1634913322",
+    "offer_snippet": "Federal Bank Affiliate Program with Payout ₹ 1190.70 / Lead | November 2025 — Join our Federal Bank Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Federal Bank af",
+    "offers": [],
+    "status": "active"
+  }
+]
