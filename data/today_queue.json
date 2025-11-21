@@ -1,1 +1,73 @@
-[]
+[
+  {
+    "id": "2c9d3eaed58d008812c541dd6ba241d1",
+    "name": "ICICI Bank Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "official",
+        "label": "ICICI Referral Page",
+        "url": "https://www.icicibank.com/personal-banking/card/credit-card/referral-program"
+      },
+      {
+        "type": "network",
+        "label": "Network Redirect",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.icicibank.com%2Fpersonal-banking%2Fcard%2Fcredit-card%2Freferral-program"
+      }
+    ],
+    "tags": [
+      "rewards",
+      "travel",
+      "cashback"
+    ],
+    "image": "https://www.icici.bank.in/content/dam/icicibank-revamp/images/icici-logo/icici%20header%20logo.png",
+    "offer_snippet": "Page not found",
+    "offers": [
+      "Deposits Back Deposits Close Fixed Deposit Recurring Deposit iWish - Goal Based Savings VIEW ALL DEPOSITS Fixed Deposit Interest Rates Fixed Deposit Calculator Dream it, achieve it! FDs offer stable returns for your dreams. OPEN FD",
+      "FDs offer stable returns for your dreams.",
+      "FDs offers Upto 7.2%* returns",
+      "RBI: Beware of Fictitious Offers"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "256d11ee8f4d0852958b51a394d2a819",
+    "name": "Mahindra Finance",
+    "product_type": "loan",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fmahindra-finance-affiliate-program"
+      }
+    ],
+    "tags": [
+      "vehicle_loan",
+      "nbfc"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/3389/thumb/Mahindra-Finance.png?1552993964",
+    "offer_snippet": "Mahindra Finance Affiliate Program with Payout ₹ 2.70 / Lead | November 2025 — Join our Mahindra Finance Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check Mahindra F",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "213f70ffec7f5a4542084a3c11fefbef",
+    "name": "Bank of Baroda Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fbank-of-baroda-credit-card-affiliate-program"
+      }
+    ],
+    "tags": [
+      "bob",
+      "cards"
+    ],
+    "image": "https://www.cuelinks.com/photos/thumb/missing.png",
+    "offer_snippet": "Bank of Baroda Credit Card Affiliate Program with Payout ₹ 850.50 / Lead | November 2025 — Join our Bank of Baroda Credit Card Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL",
+    "offers": [],
+    "status": "active"
+  }
+]
