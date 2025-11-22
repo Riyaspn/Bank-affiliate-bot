@@ -1226,5 +1226,9 @@
   {
     "name": "Bank of Baroda Credit Cards",
     "ts": 1763750268
+  },
+  {
+    "name": "IndusInd Bank Credit Cards",
+    "ts": 1763793702
   }
 ]
