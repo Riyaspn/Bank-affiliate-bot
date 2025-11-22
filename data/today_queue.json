@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "4062e8cdd1d004bf5dca3f83100728ab",
+    "name": "IndusInd Bank Credit Cards",
+    "product_type": "credit_card",
+    "links": [
+      {
+        "type": "official",
+        "label": "Referral Link Generator",
+        "url": "https://myaccount.indusind.com/savingsaccount/ReferralCodelink.aspx"
+      },
+      {
+        "type": "network",
+        "label": "Apply – Network Redirect",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Finduseasycredit.indusind.com%2Fcustomer%2Fcredit-card%2Flead"
+      }
+    ],
+    "tags": [
+      "indusind",
+      "cashback",
+      "lifestyle"
+    ],
+    "image": "https://myaccount.indusind.bank.in/savingsaccount/images/indusInd-logo.png",
+    "offer_snippet": "Referral Code Link",
+    "offers": [],
+    "status": "active"
+  },
+  {
+    "id": "e51513f31f18471a88f3686487a053ba",
+    "name": "Kiwi (Credit on UPI)",
+    "product_type": "fintech_app",
+    "links": [
+      {
+        "type": "network",
+        "label": "Apply – Kiwi",
+        "url": "https://linksredirect.com/?cid=241055&source=linkkit&url=https%3A%2F%2Fapply.gokiwi.in%2F"
+      }
+    ],
+    "tags": [
+      "credit_on_upi",
+      "fintech"
+    ],
+    "image": "https://apply.gokiwi.in/og-gokiwi.png",
+    "offer_snippet": "Kiwi: Your Virtual UPI Rupay Credit Card — With Kiwi, make credit card payments through UPI anywhere & everywhere",
+    "offers": [
+      "Get 5% Cashback",
+      "Free airport lounge access"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "2f67ce33ca38bdab09a715624dfa828b",
+    "name": "PNB MetLife (PNB)",
+    "product_type": "other",
+    "links": [
+      {
+        "type": "network",
+        "label": "Cuelinks Campaign",
+        "url": "https://linksredirect.com?cid=240891&source=extension&url=https%3A%2F%2Fwww.cuelinks.com%2Fcampaigns%2Fpnb-metlife-affiliate-program"
+      }
+    ],
+    "tags": [
+      "insurance"
+    ],
+    "image": "https://cdn0.cuelinks.com/merchant/3080/thumb/pnb.png?1515177684",
+    "offer_snippet": "PNB Metlife Affiliate Program with Payout ₹ 121.50 / Lead | November 2025 — Join our PNB Metlife Affiliate Program for affiliate earnings. Select from various payout types like CPS, CPI, CPL etc. Check PNB Metlife affili",
+    "offers": [
+      "We need to maintain a sale conversion rate of 1 % on the leads you achieve. If you cannot achieve this, then the billing will be done on a pro-rata basis."
+    ],
+    "status": "active"
+  }
+]
